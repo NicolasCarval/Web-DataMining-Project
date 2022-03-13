@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<classpath>
+	<classpathentry kind="src" path="src"/>
+	<classpathentry kind="src" path="Data"/>
+	<classpathentry kind="con" path="org.eclipse.jdt.launching.JRE_CONTAINER">
+		<attributes>
+			<attribute name="module" value="true"/>
+		</attributes>
+	</classpathentry>
+	<classpathentry kind="lib" path="C:/Users/Nicolas Carval/Documents/A4-Semestre_8/Web DataMining &amp; Semantics/Jena-2.6.2/lib/arq-2.8.1.jar">
+		<attributes>
+			<attribute name="module" value="true"/>
+		</attributes>
+	</classpathentry>
+	<classpathentry kind="lib" path="C:/Users/Nicolas Carval/Documents/A4-Semestre_8/Web DataMining &amp; Semantics/Jena-2.6.2/lib/icu4j-3.4.4.jar">
+		<attributes>
+			<attribute name="module" value="true"/>
+		</attributes>
+	</classpathentry>
+	<classpathentry kind="lib" path="C:/Users/Nicolas Carval/Documents/A4-Semestre_8/Web DataMining &amp; Semantics/Jena-2.6.2/lib/iri-0.7.jar">
+		<attributes>
+			<attribute name="module" value="true"/>
+		</attributes>
+	</classpathentry>
+	<classpathentry kind="lib" path="C:/Users/Nicolas Carval/Documents/A4-Semestre_8/Web DataMining &amp; Semantics/Jena-2.6.2/lib/jena-2.6.2.jar">
+		<attributes>
+			<attribute name="module" value="true"/>
+		</attributes>
+	</classpathentry>
+	<classpathentry kind="lib" path="C:/Users/Nicolas Carval/Documents/A4-Semestre_8/Web DataMining &amp; Semantics/Jena-2.6.2/lib/jena-2.6.2-tests.jar">
+		<attributes>
+			<attribute name="module" value="true"/>
+		</attributes>
+	</classpathentry>
+	<classpathentry kind="lib" path="C:/Users/Nicolas Carval/Documents/A4-Semestre_8/Web DataMining &amp; Semantics/Jena-2.6.2/lib/junit-4.5.jar">
+		<attributes>
+			<attribute name="module" value="true"/>
+		</attributes>
+	</classpathentry>
+	<classpathentry kind="lib" path="C:/Users/Nicolas Carval/Documents/A4-Semestre_8/Web DataMining &amp; Semantics/Jena-2.6.2/lib/log4j-1.2.13.jar">
+		<attributes>
+			<attribute name="module" value="true"/>
+		</attributes>
+	</classpathentry>
+	<classpathentry kind="lib" path="C:/Users/Nicolas Carval/Documents/A4-Semestre_8/Web DataMining &amp; Semantics/Jena-2.6.2/lib/lucene-core-2.3.1.jar">
+		<attributes>
+			<attribute name="module" value="true"/>
+		</attributes>
+	</classpathentry>
+	<classpathentry kind="lib" path="C:/Users/Nicolas Carval/Documents/A4-Semestre_8/Web DataMining &amp; Semantics/Jena-2.6.2/lib/slf4j-api-1.5.6.jar">
+		<attributes>
+			<attribute name="module" value="true"/>
+		</attributes>
+	</classpathentry>
+	<classpathentry kind="lib" path="C:/Users/Nicolas Carval/Documents/A4-Semestre_8/Web DataMining &amp; Semantics/Jena-2.6.2/lib/slf4j-log4j12-1.5.6.jar">
+		<attributes>
+			<attribute name="module" value="true"/>
+		</attributes>
+	</classpathentry>
+	<classpathentry kind="lib" path="C:/Users/Nicolas Carval/Documents/A4-Semestre_8/Web DataMining &amp; Semantics/Jena-2.6.2/lib/stax-api-1.0.1.jar">
+		<attributes>
+			<attribute name="module" value="true"/>
+		</attributes>
+	</classpathentry>
+	<classpathentry kind="lib" path="C:/Users/Nicolas Carval/Documents/A4-Semestre_8/Web DataMining &amp; Semantics/Jena-2.6.2/lib/wstx-asl-3.2.9.jar">
+		<attributes>
+			<attribute name="module" value="true"/>
+		</attributes>
+	</classpathentry>
+	<classpathentry kind="lib" path="C:/Users/Nicolas Carval/Documents/A4-Semestre_8/Web DataMining &amp; Semantics/Jena-2.6.2/lib/xercesImpl-2.7.1.jar">
+		<attributes>
+			<attribute name="module" value="true"/>
+		</attributes>
+	</classpathentry>
+	<classpathentry kind="lib" path="C:/Users/Nicolas Carval/Documents/A4-Semestre_8/Web DataMining &amp; Semantics/Final_Project/Web-DataMining-Project/Java_Project/json-20211205.jar">
+		<attributes>
+			<attribute name="module" value="true"/>
+		</attributes>
+	</classpathentry>
+	<classpathentry kind="lib" path="C:/Users/Nicolas Carval/Documents/A4-Semestre_8/Web DataMining &amp; Semantics/Final_Project/Web-DataMining-Project/Java_Project/json-simple-1.1.jar">
+		<attributes>
+			<attribute name="module" value="true"/>
+		</attributes>
+	</classpathentry>
+	<classpathentry kind="output" path="bin"/>
+</classpath>

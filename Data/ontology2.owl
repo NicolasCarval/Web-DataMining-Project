@@ -1,0 +1,181 @@
+<?xml version="1.0"?>
+<rdf:RDF xmlns="http://www.semanticweb.org/sébastien/ontologies/2022/2/untitled-ontology-22#"
+     xml:base="http://www.semanticweb.org/sébastien/ontologies/2022/2/untitled-ontology-22"
+     xmlns:owl="http://www.w3.org/2002/07/owl#"
+     xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+     xmlns:xml="http://www.w3.org/XML/1998/namespace"
+     xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
+     xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#">
+    <owl:Ontology rdf:about="http://www.semanticweb.org/sébastien/ontologies/2022/2/untitled-ontology-22"/>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Data properties
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://www.semanticweb.org/sébastien/ontologies/2022/2/untitled-ontology-22#City -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/sébastien/ontologies/2022/2/untitled-ontology-22#City"/>
+    
+
+
+    <!-- http://www.semanticweb.org/sébastien/ontologies/2022/2/untitled-ontology-22#Localisation -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/sébastien/ontologies/2022/2/untitled-ontology-22#Localisation"/>
+    
+
+
+    <!-- http://www.semanticweb.org/sébastien/ontologies/2022/2/untitled-ontology-22#department -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/sébastien/ontologies/2022/2/untitled-ontology-22#department"/>
+    
+
+
+    <!-- http://www.semanticweb.org/sébastien/ontologies/2022/2/untitled-ontology-22#latitude -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/sébastien/ontologies/2022/2/untitled-ontology-22#latitude"/>
+    
+
+
+    <!-- http://www.semanticweb.org/sébastien/ontologies/2022/2/untitled-ontology-22#longitude -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/sébastien/ontologies/2022/2/untitled-ontology-22#longitude"/>
+    
+
+
+    <!-- http://www.semanticweb.org/sébastien/ontologies/2022/2/untitled-ontology-22#name -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/sébastien/ontologies/2022/2/untitled-ontology-22#name"/>
+    
+
+
+    <!-- http://www.semanticweb.org/sébastien/ontologies/2022/2/untitled-ontology-22#numberOfUsers -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/sébastien/ontologies/2022/2/untitled-ontology-22#numberOfUsers"/>
+    
+
+
+    <!-- http://www.semanticweb.org/sébastien/ontologies/2022/2/untitled-ontology-22#phone -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/sébastien/ontologies/2022/2/untitled-ontology-22#phone"/>
+    
+
+
+    <!-- http://www.semanticweb.org/sébastien/ontologies/2022/2/untitled-ontology-22#region -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/sébastien/ontologies/2022/2/untitled-ontology-22#region"/>
+    
+
+
+    <!-- http://www.semanticweb.org/sébastien/ontologies/2022/2/untitled-ontology-22#wifi -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/sébastien/ontologies/2022/2/untitled-ontology-22#wifi"/>
+    
+
+
+    <!-- http://www.semanticweb.org/sébastien/ontologies/2022/2/untitled-ontology-22#zipCode -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/sébastien/ontologies/2022/2/untitled-ontology-22#zipCode"/>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Classes
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://www.semanticweb.org/sébastien/ontologies/2022/2/untitled-ontology-22#Museum -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/sébastien/ontologies/2022/2/untitled-ontology-22#Museum">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/sébastien/ontologies/2022/2/untitled-ontology-22#Place"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/sébastien/ontologies/2022/2/untitled-ontology-22#Localisation"/>
+                <owl:allValuesFrom rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <owl:disjointWith rdf:resource="http://www.semanticweb.org/sébastien/ontologies/2022/2/untitled-ontology-22#TrainStation"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/sébastien/ontologies/2022/2/untitled-ontology-22#Place -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/sébastien/ontologies/2022/2/untitled-ontology-22#Place">
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/sébastien/ontologies/2022/2/untitled-ontology-22#City"/>
+                <owl:allValuesFrom rdf:resource="http://www.w3.org/2001/XMLSchema#integer"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/sébastien/ontologies/2022/2/untitled-ontology-22#department"/>
+                <owl:allValuesFrom rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/sébastien/ontologies/2022/2/untitled-ontology-22#latitude"/>
+                <owl:allValuesFrom rdf:resource="http://www.w3.org/2001/XMLSchema#float"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/sébastien/ontologies/2022/2/untitled-ontology-22#longitude"/>
+                <owl:allValuesFrom rdf:resource="http://www.w3.org/2001/XMLSchema#float"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/sébastien/ontologies/2022/2/untitled-ontology-22#name"/>
+                <owl:allValuesFrom rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/sébastien/ontologies/2022/2/untitled-ontology-22#TrainStation -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/sébastien/ontologies/2022/2/untitled-ontology-22#TrainStation">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/sébastien/ontologies/2022/2/untitled-ontology-22#Place"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/sébastien/ontologies/2022/2/untitled-ontology-22#numberOfUsers"/>
+                <owl:allValuesFrom rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/sébastien/ontologies/2022/2/untitled-ontology-22#region"/>
+                <owl:allValuesFrom rdf:resource="http://www.w3.org/2001/XMLSchema#int"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/sébastien/ontologies/2022/2/untitled-ontology-22#wifi"/>
+                <owl:allValuesFrom rdf:resource="http://www.w3.org/2001/XMLSchema#boolean"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+    </owl:Class>
+</rdf:RDF>
+
+
+
+<!-- Generated by the OWL API (version 4.5.9.2019-02-01T07:24:44Z) https://github.com/owlcs/owlapi -->
+

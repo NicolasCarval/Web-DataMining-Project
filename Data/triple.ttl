@@ -1,5 +1,6 @@
 @base <http://exemple.org> .
 @prefix ns1: <http://www.semanticweb.org/sébastien/ontologies/2022/2/untitled-ontology-22#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
 @prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
 
 ns1:0 a ns1:TrainStation ;
@@ -11351,4 +11352,8 @@ ns1:999 a ns1:Museum ;
     ns1:latitude "44.581128"^^xsd:float ;
     ns1:longitude "-0.041074"^^xsd:float ;
     ns1:name "musée municipal"^^xsd:string .
+
+ns1:TrainStation rdfs:subClassOf ns1:Place .
+
+ns1:Museum rdfs:subClassOf ns1:Place .
 

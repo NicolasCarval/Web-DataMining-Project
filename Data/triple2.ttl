@@ -1,0 +1,22 @@
+@prefix ns1: <http://www.semanticweb.org/sébastien/ontologies/2022/2/untitled-ontology-22#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+ns1:0 a ns1:TrainStation ;
+    ns1:City 13592 ;
+    ns1:department "Ain"^^xsd:string ;
+    ns1:latitude "46.097"^^xsd:float ;
+    ns1:longitude "4.8469999999999995"^^xsd:float ;
+    ns1:name "Aix-en-Provence TGV"^^xsd:string ;
+    ns1:numberOfUsers "high"^^xsd:string ;
+    ns1:region 84 ;
+    ns1:wifi "Oui"^^xsd:string .
+
+ns1:1 a ns1:TrainStation ;
+    ns1:City 1000 ;
+    ns1:department "Ain"^^xsd:string ;
+    ns1:latitude "46.196"^^xsd:float ;
+    ns1:longitude "5.275"^^xsd:float ;
+    ns1:name "Bourg-en-Bresse"^^xsd:string ;
+    ns1:numberOfUsers "high"^^xsd:string ;
+    ns1:region 84 ;
+    ns1:wifi "Oui"^^xsd:string .

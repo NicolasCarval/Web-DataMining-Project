@@ -1591,14 +1591,6 @@ ns1:1170 a ns1:Museum ;
     ns1:name "archéosite de Montans"^^xsd:string .
 
 ns1:1171 a ns1:Museum ;
-    ns1:City nan ;
-    ns1:Localisation "Place Sainte-Cécile"^^xsd:string ;
-    ns1:department "Tarn"^^xsd:string ;
-    ns1:latitude "43.928096"^^xsd:float ;
-    ns1:longitude "2.143551"^^xsd:float ;
-    ns1:name "musée Toulouse-Lautrec"^^xsd:string .
-
-ns1:1172 a ns1:Museum ;
     ns1:City 81140.0 ;
     ns1:Localisation "Château du Cayla"^^xsd:string ;
     ns1:department "Tarn"^^xsd:string ;
@@ -1606,7 +1598,7 @@ ns1:1172 a ns1:Museum ;
     ns1:longitude "1.899025"^^xsd:float ;
     ns1:name "musée Eugénie et Maurice Guérin"^^xsd:string .
 
-ns1:1173 a ns1:Museum ;
+ns1:1172 a ns1:Museum ;
     ns1:City 81170.0 ;
     ns1:Localisation "1 rue Saint Michel"^^xsd:string ;
     ns1:department "Tarn"^^xsd:string ;
@@ -1614,7 +1606,7 @@ ns1:1173 a ns1:Museum ;
     ns1:longitude "1.94934"^^xsd:float ;
     ns1:name "musée Charles Portal - Histoire et patrimoine"^^xsd:string .
 
-ns1:1174 a ns1:Museum ;
+ns1:1173 a ns1:Museum ;
     ns1:City 81270.0 ;
     ns1:Localisation "Rue de la Rive"^^xsd:string ;
     ns1:department "Tarn"^^xsd:string ;
@@ -1622,7 +1614,7 @@ ns1:1174 a ns1:Museum ;
     ns1:longitude "2.6385389999999997"^^xsd:float ;
     ns1:name "musée du textile"^^xsd:string .
 
-ns1:1175 a ns1:Museum ;
+ns1:1174 a ns1:Museum ;
     ns1:City 81310.0 ;
     ns1:Localisation "10, rue Victor Maziès"^^xsd:string ;
     ns1:department "Tarn"^^xsd:string ;
@@ -1630,7 +1622,7 @@ ns1:1175 a ns1:Museum ;
     ns1:longitude "1.811377"^^xsd:float ;
     ns1:name "musée Raymond Lafage"^^xsd:string .
 
-ns1:1176 a ns1:Museum ;
+ns1:1175 a ns1:Museum ;
     ns1:City 81600.0 ;
     ns1:Localisation "Place Philadelphe Thomas"^^xsd:string ;
     ns1:department "Tarn"^^xsd:string ;
@@ -1638,7 +1630,7 @@ ns1:1176 a ns1:Museum ;
     ns1:longitude "1.8940800000000002"^^xsd:float ;
     ns1:name "musée d'histoire naturelle Philadelphe-Thomas"^^xsd:string .
 
-ns1:1177 a ns1:Museum ;
+ns1:1176 a ns1:Museum ;
     ns1:City 82140.0 ;
     ns1:Localisation "Place de la Halle"^^xsd:string ;
     ns1:department "Tarn-et-Garonne"^^xsd:string ;
@@ -1646,7 +1638,7 @@ ns1:1177 a ns1:Museum ;
     ns1:longitude "1.756727"^^xsd:float ;
     ns1:name "musée de préhistoire"^^xsd:string .
 
-ns1:1178 a ns1:Museum ;
+ns1:1177 a ns1:Museum ;
     ns1:City 82340.0 ;
     ns1:Localisation "12 Place de la Halle"^^xsd:string ;
     ns1:department "Tarn-et-Garonne"^^xsd:string ;
@@ -1654,13 +1646,21 @@ ns1:1178 a ns1:Museum ;
     ns1:longitude "0.8994719999999999"^^xsd:float ;
     ns1:name "musée du vieil Auvillar"^^xsd:string .
 
-ns1:1179 a ns1:Museum ;
+ns1:1178 a ns1:Museum ;
     ns1:City 82200.0 ;
     ns1:Localisation "4 rue de l'Abbaye"^^xsd:string ;
     ns1:department "Tarn-et-Garonne"^^xsd:string ;
     ns1:latitude "44.105697"^^xsd:float ;
     ns1:longitude "1.085296"^^xsd:float ;
     ns1:name "musée des arts et traditions populaires"^^xsd:string .
+
+ns1:1179 a ns1:Museum ;
+    ns1:City 82170.0 ;
+    ns1:Localisation "15 rue Jean Comère"^^xsd:string ;
+    ns1:department "Tarn-et-Garonne"^^xsd:string ;
+    ns1:latitude "43.827651"^^xsd:float ;
+    ns1:longitude "1.294738"^^xsd:float ;
+    ns1:name "musée Théodore Calbet"^^xsd:string .
 
 ns1:118 a ns1:TrainStation ;
     ns1:City 71100 ;
@@ -1673,14 +1673,6 @@ ns1:118 a ns1:TrainStation ;
     ns1:wifi "Oui"^^xsd:string .
 
 ns1:1180 a ns1:Museum ;
-    ns1:City 82170.0 ;
-    ns1:Localisation "15 rue Jean Comère"^^xsd:string ;
-    ns1:department "Tarn-et-Garonne"^^xsd:string ;
-    ns1:latitude "43.827651"^^xsd:float ;
-    ns1:longitude "1.294738"^^xsd:float ;
-    ns1:name "musée Théodore Calbet"^^xsd:string .
-
-ns1:1181 a ns1:Museum ;
     ns1:City 82000.0 ;
     ns1:Localisation "19, rue de l'Hôtel de Ville BP 752"^^xsd:string ;
     ns1:department "Tarn-et-Garonne"^^xsd:string ;
@@ -1688,7 +1680,7 @@ ns1:1181 a ns1:Museum ;
     ns1:longitude "1.35188"^^xsd:float ;
     ns1:name "musée Ingres Bourdelle"^^xsd:string .
 
-ns1:1182 a ns1:Museum ;
+ns1:1181 a ns1:Museum ;
     ns1:City 82000.0 ;
     ns1:Localisation "2 place Antoine Bourdelle"^^xsd:string ;
     ns1:department "Tarn-et-Garonne"^^xsd:string ;
@@ -1696,7 +1688,7 @@ ns1:1182 a ns1:Museum ;
     ns1:longitude "1.351385"^^xsd:float ;
     ns1:name "musée d'histoire naturelle Victor-Brun"^^xsd:string .
 
-ns1:1183 a ns1:Museum ;
+ns1:1182 a ns1:Museum ;
     ns1:City 44130.0 ;
     ns1:Localisation "2 place Jean Guihard"^^xsd:string ;
     ns1:department "Loire-Atlantique"^^xsd:string ;
@@ -1704,7 +1696,7 @@ ns1:1183 a ns1:Museum ;
     ns1:longitude "-1.764575"^^xsd:float ;
     ns1:name "musée des arts et traditions populaires"^^xsd:string .
 
-ns1:1184 a ns1:Museum ;
+ns1:1183 a ns1:Museum ;
     ns1:City 44000.0 ;
     ns1:Localisation "10 rue Georges Clémenceau"^^xsd:string ;
     ns1:department "Loire-Atlantique"^^xsd:string ;
@@ -1712,7 +1704,7 @@ ns1:1184 a ns1:Museum ;
     ns1:longitude "-1.547096"^^xsd:float ;
     ns1:name "musées des beaux-arts"^^xsd:string .
 
-ns1:1185 a ns1:Museum ;
+ns1:1184 a ns1:Museum ;
     ns1:City 44720.0 ;
     ns1:Localisation "177 Île-de-Fédrun"^^xsd:string ;
     ns1:department "Loire-Atlantique"^^xsd:string ;
@@ -1720,7 +1712,7 @@ ns1:1185 a ns1:Museum ;
     ns1:longitude "-2.21367"^^xsd:float ;
     ns1:name "musées du parc naturel régional de Brière"^^xsd:string .
 
-ns1:1186 a ns1:Museum ;
+ns1:1185 a ns1:Museum ;
     ns1:City 44330.0 ;
     ns1:Localisation "82 rue Pierre Abélard"^^xsd:string ;
     ns1:department "Loire-Atlantique"^^xsd:string ;
@@ -1728,7 +1720,7 @@ ns1:1186 a ns1:Museum ;
     ns1:longitude "-1.329883"^^xsd:float ;
     ns1:name "musée du vignoble nantais"^^xsd:string .
 
-ns1:1187 a ns1:Museum ;
+ns1:1186 a ns1:Museum ;
     ns1:City 44351.0 ;
     ns1:Localisation "7, place du Marché-au-Bois"^^xsd:string ;
     ns1:department "Loire-Atlantique"^^xsd:string ;
@@ -1736,7 +1728,7 @@ ns1:1187 a ns1:Museum ;
     ns1:longitude "-2.4263477594"^^xsd:float ;
     ns1:name "musée de la porte Saint-Michel"^^xsd:string .
 
-ns1:1188 a ns1:Museum ;
+ns1:1187 a ns1:Museum ;
     ns1:City 44000.0 ;
     ns1:Localisation "4 place Marc Elder"^^xsd:string ;
     ns1:department "Loire-Atlantique"^^xsd:string ;
@@ -1744,13 +1736,21 @@ ns1:1188 a ns1:Museum ;
     ns1:longitude "-1.5493890000000001"^^xsd:float ;
     ns1:name "musée du château des ducs de Bretagne"^^xsd:string .
 
-ns1:1189 a ns1:Museum ;
+ns1:1188 a ns1:Museum ;
     ns1:City 44000.0 ;
     ns1:Localisation "Département de Loire-Atlantique, Grand-Patrimoine de Loire-Atlantique"^^xsd:string ;
     ns1:department "Loire-Atlantique"^^xsd:string ;
     ns1:latitude "47.211788"^^xsd:float ;
     ns1:longitude "-1.566123"^^xsd:float ;
     ns1:name "musée Dobrée"^^xsd:string .
+
+ns1:1189 a ns1:Museum ;
+    ns1:City 44600.0 ;
+    ns1:Localisation "avenue de Saint-Hubert"^^xsd:string ;
+    ns1:department "Loire-Atlantique"^^xsd:string ;
+    ns1:latitude "47.273813"^^xsd:float ;
+    ns1:longitude "-2.198174"^^xsd:float ;
+    ns1:name "écomusée"^^xsd:string .
 
 ns1:119 a ns1:TrainStation ;
     ns1:City 72000 ;
@@ -1763,14 +1763,6 @@ ns1:119 a ns1:TrainStation ;
     ns1:wifi "Oui"^^xsd:string .
 
 ns1:1190 a ns1:Museum ;
-    ns1:City 44600.0 ;
-    ns1:Localisation "avenue de Saint-Hubert"^^xsd:string ;
-    ns1:department "Loire-Atlantique"^^xsd:string ;
-    ns1:latitude "47.273813"^^xsd:float ;
-    ns1:longitude "-2.198174"^^xsd:float ;
-    ns1:name "écomusée"^^xsd:string .
-
-ns1:1191 a ns1:Museum ;
     ns1:City 44146.0 ;
     ns1:Localisation "Hôtel de Ville, BP 189"^^xsd:string ;
     ns1:department "Loire-Atlantique"^^xsd:string ;
@@ -1778,7 +1770,7 @@ ns1:1191 a ns1:Museum ;
     ns1:longitude "-1.3758648097"^^xsd:float ;
     ns1:name "musée municipal"^^xsd:string .
 
-ns1:1192 a ns1:Museum ;
+ns1:1191 a ns1:Museum ;
     ns1:City 44740.0 ;
     ns1:Localisation "29bis, rue Pasteur"^^xsd:string ;
     ns1:department "Loire-Atlantique"^^xsd:string ;
@@ -1786,7 +1778,7 @@ ns1:1192 a ns1:Museum ;
     ns1:longitude "-2.478054"^^xsd:float ;
     ns1:name "musée des Marais salants"^^xsd:string .
 
-ns1:1193 a ns1:Museum ;
+ns1:1192 a ns1:Museum ;
     ns1:City 44000.0 ;
     ns1:Localisation "12 rue Voltaire"^^xsd:string ;
     ns1:department "Loire-Atlantique"^^xsd:string ;
@@ -1794,7 +1786,7 @@ ns1:1193 a ns1:Museum ;
     ns1:longitude "-1.564652"^^xsd:float ;
     ns1:name "muséum d'histoire naturelle"^^xsd:string .
 
-ns1:1194 a ns1:Museum ;
+ns1:1193 a ns1:Museum ;
     ns1:City 44580.0 ;
     ns1:Localisation "6 rue des Moines"^^xsd:string ;
     ns1:department "Loire-Atlantique"^^xsd:string ;
@@ -1802,7 +1794,7 @@ ns1:1194 a ns1:Museum ;
     ns1:longitude "-1.952164"^^xsd:float ;
     ns1:name "musée du pays de Retz"^^xsd:string .
 
-ns1:1195 a ns1:Museum ;
+ns1:1194 a ns1:Museum ;
     ns1:City 49100.0 ;
     ns1:Localisation "32 bis rue Lenepveu"^^xsd:string ;
     ns1:department "Maine-et-Loire"^^xsd:string ;
@@ -1810,7 +1802,7 @@ ns1:1195 a ns1:Museum ;
     ns1:longitude "-0.551841"^^xsd:float ;
     ns1:name "musée Pincé"^^xsd:string .
 
-ns1:1196 a ns1:Museum ;
+ns1:1195 a ns1:Museum ;
     ns1:City 49250.0 ;
     ns1:Localisation "Place Notre-Dame, Beaufort-en-Vallée"^^xsd:string ;
     ns1:department "Maine-et-Loire"^^xsd:string ;
@@ -1818,7 +1810,7 @@ ns1:1196 a ns1:Museum ;
     ns1:longitude "-0.217749"^^xsd:float ;
     ns1:name "musée Joseph Denais"^^xsd:string .
 
-ns1:1197 a ns1:Museum ;
+ns1:1196 a ns1:Museum ;
     ns1:City 49100.0 ;
     ns1:Localisation "43 rue Jules Guitton"^^xsd:string ;
     ns1:department "Maine-et-Loire"^^xsd:string ;
@@ -1826,7 +1818,7 @@ ns1:1197 a ns1:Museum ;
     ns1:longitude "-0.546399"^^xsd:float ;
     ns1:name "muséum des sciences naturelles"^^xsd:string .
 
-ns1:1198 a ns1:Museum ;
+ns1:1197 a ns1:Museum ;
     ns1:City 49150.0 ;
     ns1:Localisation "Place de l'Europe"^^xsd:string ;
     ns1:department "Maine-et-Loire"^^xsd:string ;
@@ -1834,13 +1826,21 @@ ns1:1198 a ns1:Museum ;
     ns1:longitude "-0.11996599999999999"^^xsd:float ;
     ns1:name "musée d'art et d'histoire"^^xsd:string .
 
-ns1:1199 a ns1:Museum ;
+ns1:1198 a ns1:Museum ;
     ns1:City 49800.0 ;
     ns1:Localisation "32 chemin de La Maraîchère"^^xsd:string ;
     ns1:department "Maine-et-Loire"^^xsd:string ;
     ns1:latitude "47.450792"^^xsd:float ;
     ns1:longitude "-0.49151799999999995"^^xsd:float ;
     ns1:name "musée de l'ardoise"^^xsd:string .
+
+ns1:1199 a ns1:Museum ;
+    ns1:City 49390.0 ;
+    ns1:Localisation "1 place Jules-Desbois, Parçat-les-Pins"^^xsd:string ;
+    ns1:department "Maine-et-Loire"^^xsd:string ;
+    ns1:latitude "47.436646"^^xsd:float ;
+    ns1:longitude "0.15950799999999998"^^xsd:float ;
+    ns1:name "musée Jules-Desbois"^^xsd:string .
 
 ns1:12 a ns1:TrainStation ;
     ns1:City 11000 ;
@@ -1863,14 +1863,6 @@ ns1:120 a ns1:TrainStation ;
     ns1:wifi "Non"^^xsd:string .
 
 ns1:1200 a ns1:Museum ;
-    ns1:City 49390.0 ;
-    ns1:Localisation "1 place Jules-Desbois, Parçat-les-Pins"^^xsd:string ;
-    ns1:department "Maine-et-Loire"^^xsd:string ;
-    ns1:latitude "47.436646"^^xsd:float ;
-    ns1:longitude "0.15950799999999998"^^xsd:float ;
-    ns1:name "musée Jules-Desbois"^^xsd:string .
-
-ns1:1201 a ns1:Museum ;
     ns1:City 49300.0 ;
     ns1:Localisation "27 avenue de l'Abreuvoir"^^xsd:string ;
     ns1:department "Maine-et-Loire"^^xsd:string ;
@@ -1878,7 +1870,7 @@ ns1:1201 a ns1:Museum ;
     ns1:longitude "-0.882284"^^xsd:float ;
     ns1:name "musée d'art et d'histoire"^^xsd:string .
 
-ns1:1202 a ns1:Museum ;
+ns1:1201 a ns1:Museum ;
     ns1:City 49300.0 ;
     ns1:Localisation "rue du Docteur Roux"^^xsd:string ;
     ns1:department "Maine-et-Loire"^^xsd:string ;
@@ -1886,7 +1878,7 @@ ns1:1202 a ns1:Museum ;
     ns1:longitude "-0.897677"^^xsd:float ;
     ns1:name "musée du textile"^^xsd:string .
 
-ns1:1203 a ns1:Museum ;
+ns1:1202 a ns1:Museum ;
     ns1:City 49408.0 ;
     ns1:Localisation "Rue Molière"^^xsd:string ;
     ns1:department "Maine-et-Loire"^^xsd:string ;
@@ -1894,7 +1886,7 @@ ns1:1203 a ns1:Museum ;
     ns1:longitude "-0.0719175041"^^xsd:float ;
     ns1:name "château-musée de Saumur"^^xsd:string .
 
-ns1:1204 a ns1:Museum ;
+ns1:1203 a ns1:Museum ;
     ns1:City 49590.0 ;
     ns1:Localisation "None"^^xsd:string ;
     ns1:department "Maine-et-Loire"^^xsd:string ;
@@ -1902,7 +1894,7 @@ ns1:1204 a ns1:Museum ;
     ns1:longitude "0.052950000000000004"^^xsd:float ;
     ns1:name "musée d'art moderne de Fontevraud - collection Martine et Léon Cligman"^^xsd:string .
 
-ns1:1205 a ns1:Museum ;
+ns1:1204 a ns1:Museum ;
     ns1:City 49100.0 ;
     ns1:Localisation "14 rue du musée, 33 bis rue Toussaint"^^xsd:string ;
     ns1:department "Maine-et-Loire"^^xsd:string ;
@@ -1910,7 +1902,7 @@ ns1:1205 a ns1:Museum ;
     ns1:longitude "-0.555485"^^xsd:float ;
     ns1:name "musée des beaux-arts et galerie David-d'Angers"^^xsd:string .
 
-ns1:1206 a ns1:Museum ;
+ns1:1205 a ns1:Museum ;
     ns1:City 49100.0 ;
     ns1:Localisation "4 boulevard Arago"^^xsd:string ;
     ns1:department "Maine-et-Loire"^^xsd:string ;
@@ -1918,7 +1910,7 @@ ns1:1206 a ns1:Museum ;
     ns1:longitude "-0.557052"^^xsd:float ;
     ns1:name "musée Jean Lurcat et de la tapisserie contemporaine"^^xsd:string .
 
-ns1:1207 a ns1:Museum ;
+ns1:1206 a ns1:Museum ;
     ns1:City 49750.0 ;
     ns1:Localisation "Place des Vignerons"^^xsd:string ;
     ns1:department "Maine-et-Loire"^^xsd:string ;
@@ -1926,7 +1918,7 @@ ns1:1207 a ns1:Museum ;
     ns1:longitude "-0.6350239999999999"^^xsd:float ;
     ns1:name "musée de la vigne et du vin d'Anjou"^^xsd:string .
 
-ns1:1208 a ns1:Museum ;
+ns1:1207 a ns1:Museum ;
     ns1:City 53204.0 ;
     ns1:Localisation "rue Jean Bourré"^^xsd:string ;
     ns1:department "Mayenne"^^xsd:string ;
@@ -1934,13 +1926,21 @@ ns1:1208 a ns1:Museum ;
     ns1:longitude "-0.7039436065"^^xsd:float ;
     ns1:name "musée d'art et d'archéologie"^^xsd:string .
 
-ns1:1209 a ns1:Museum ;
+ns1:1208 a ns1:Museum ;
     ns1:City 53100.0 ;
     ns1:Localisation "Place Juhel"^^xsd:string ;
     ns1:department "Mayenne"^^xsd:string ;
     ns1:latitude "48.302519"^^xsd:float ;
     ns1:longitude "-0.620269"^^xsd:float ;
     ns1:name "musée du château"^^xsd:string .
+
+ns1:1209 a ns1:Museum ;
+    ns1:City 53160.0 ;
+    ns1:Localisation "13 rue de la Libération"^^xsd:string ;
+    ns1:department "Mayenne"^^xsd:string ;
+    ns1:latitude "48.255526"^^xsd:float ;
+    ns1:longitude "-0.496863"^^xsd:float ;
+    ns1:name "musée archéologique départemental"^^xsd:string .
 
 ns1:121 a ns1:TrainStation ;
     ns1:City 73210 ;
@@ -1953,14 +1953,6 @@ ns1:121 a ns1:TrainStation ;
     ns1:wifi "Non"^^xsd:string .
 
 ns1:1210 a ns1:Museum ;
-    ns1:City 53160.0 ;
-    ns1:Localisation "13 rue de la Libération"^^xsd:string ;
-    ns1:department "Mayenne"^^xsd:string ;
-    ns1:latitude "48.255526"^^xsd:float ;
-    ns1:longitude "-0.496863"^^xsd:float ;
-    ns1:name "musée archéologique départemental"^^xsd:string .
-
-ns1:1211 a ns1:Museum ;
     ns1:City 53300.0 ;
     ns1:Localisation "place Billard-de-Vaux"^^xsd:string ;
     ns1:department "Mayenne"^^xsd:string ;
@@ -1968,7 +1960,7 @@ ns1:1211 a ns1:Museum ;
     ns1:longitude "-0.630644"^^xsd:float ;
     ns1:name "musée des tisserands mayennais"^^xsd:string .
 
-ns1:1212 a ns1:Museum ;
+ns1:1211 a ns1:Museum ;
     ns1:City 53230.0 ;
     ns1:Localisation "La Frênouse"^^xsd:string ;
     ns1:department "Mayenne"^^xsd:string ;
@@ -1976,7 +1968,7 @@ ns1:1212 a ns1:Museum ;
     ns1:longitude "-0.906893"^^xsd:float ;
     ns1:name "musée Robert Tatin"^^xsd:string .
 
-ns1:1213 a ns1:Museum ;
+ns1:1212 a ns1:Museum ;
     ns1:City 53800.0 ;
     ns1:Localisation "None"^^xsd:string ;
     ns1:department "Mayenne"^^xsd:string ;
@@ -1984,7 +1976,7 @@ ns1:1213 a ns1:Museum ;
     ns1:longitude "-1.059417"^^xsd:float ;
     ns1:name "musée de l'ardoise"^^xsd:string .
 
-ns1:1214 a ns1:Museum ;
+ns1:1213 a ns1:Museum ;
     ns1:City 53500.0 ;
     ns1:Localisation "None"^^xsd:string ;
     ns1:department "Mayenne"^^xsd:string ;
@@ -1992,7 +1984,7 @@ ns1:1214 a ns1:Museum ;
     ns1:longitude "-0.933518"^^xsd:float ;
     ns1:name "musée municipal"^^xsd:string .
 
-ns1:1215 a ns1:Museum ;
+ns1:1214 a ns1:Museum ;
     ns1:City 53000.0 ;
     ns1:Localisation "Place de La Trémoille"^^xsd:string ;
     ns1:department "Mayenne"^^xsd:string ;
@@ -2000,7 +1992,7 @@ ns1:1215 a ns1:Museum ;
     ns1:longitude "-0.7722100000000001"^^xsd:float ;
     ns1:name "musée du vieux château"^^xsd:string .
 
-ns1:1216 a ns1:Museum ;
+ns1:1215 a ns1:Museum ;
     ns1:City 53000.0 ;
     ns1:Localisation "Place de Hercé"^^xsd:string ;
     ns1:department "Mayenne"^^xsd:string ;
@@ -2008,7 +2000,7 @@ ns1:1216 a ns1:Museum ;
     ns1:longitude "-0.772148"^^xsd:float ;
     ns1:name "musée des sciences"^^xsd:string .
 
-ns1:1217 a ns1:Museum ;
+ns1:1216 a ns1:Museum ;
     ns1:City 72000.0 ;
     ns1:Localisation "2, avenue de Paderborn"^^xsd:string ;
     ns1:department "Sarthe"^^xsd:string ;
@@ -2016,7 +2008,7 @@ ns1:1217 a ns1:Museum ;
     ns1:longitude "0.203755"^^xsd:float ;
     ns1:name "musée de Tessé"^^xsd:string .
 
-ns1:1218 a ns1:Museum ;
+ns1:1217 a ns1:Museum ;
     ns1:City 72000.0 ;
     ns1:Localisation "9-13 rue de la Reine Bérengère"^^xsd:string ;
     ns1:department "Sarthe"^^xsd:string ;
@@ -2024,13 +2016,21 @@ ns1:1218 a ns1:Museum ;
     ns1:longitude "0.19770000000000001"^^xsd:float ;
     ns1:name "musée de la reine Bérengère"^^xsd:string .
 
-ns1:1219 a ns1:Museum ;
+ns1:1218 a ns1:Museum ;
     ns1:City 72270.0 ;
     ns1:Localisation "Rue Victor Hugo"^^xsd:string ;
     ns1:department "Sarthe"^^xsd:string ;
     ns1:latitude "47.813698"^^xsd:float ;
     ns1:longitude "-0.083896"^^xsd:float ;
     ns1:name "musée espace faïence de Malicorne"^^xsd:string .
+
+ns1:1219 a ns1:Museum ;
+    ns1:City 72500.0 ;
+    ns1:Localisation "Mairie"^^xsd:string ;
+    ns1:department "Sarthe"^^xsd:string ;
+    ns1:latitude "47.693176"^^xsd:float ;
+    ns1:longitude "0.417263"^^xsd:float ;
+    ns1:name "musée municipal"^^xsd:string .
 
 ns1:122 a ns1:TrainStation ;
     ns1:City 73100 ;
@@ -2043,14 +2043,6 @@ ns1:122 a ns1:TrainStation ;
     ns1:wifi "Oui"^^xsd:string .
 
 ns1:1220 a ns1:Museum ;
-    ns1:City 72500.0 ;
-    ns1:Localisation "Mairie"^^xsd:string ;
-    ns1:department "Sarthe"^^xsd:string ;
-    ns1:latitude "47.693176"^^xsd:float ;
-    ns1:longitude "0.417263"^^xsd:float ;
-    ns1:name "musée municipal"^^xsd:string .
-
-ns1:1221 a ns1:Museum ;
     ns1:City 72100.0 ;
     ns1:Localisation "204 avenue Jean Jaurès"^^xsd:string ;
     ns1:department "Sarthe"^^xsd:string ;
@@ -2058,7 +2050,7 @@ ns1:1221 a ns1:Museum ;
     ns1:longitude "0.208417"^^xsd:float ;
     ns1:name "musée vert Véron-de-Forbonnais"^^xsd:string .
 
-ns1:1222 a ns1:Museum ;
+ns1:1221 a ns1:Museum ;
     ns1:City 72120.0 ;
     ns1:Localisation "Place de l'hôtel de ville"^^xsd:string ;
     ns1:department "Sarthe"^^xsd:string ;
@@ -2066,7 +2058,7 @@ ns1:1222 a ns1:Museum ;
     ns1:longitude "0.743518"^^xsd:float ;
     ns1:name "bibliothèque-musée"^^xsd:string .
 
-ns1:1223 a ns1:Museum ;
+ns1:1222 a ns1:Museum ;
     ns1:City 85550.0 ;
     ns1:Localisation "Lieu dit «Le Daviaud»"^^xsd:string ;
     ns1:department "Vendée"^^xsd:string ;
@@ -2074,7 +2066,7 @@ ns1:1223 a ns1:Museum ;
     ns1:longitude "-2.102492"^^xsd:float ;
     ns1:name "centre de découverte du marais breton"^^xsd:string .
 
-ns1:1224 a ns1:Museum ;
+ns1:1223 a ns1:Museum ;
     ns1:City 85680.0 ;
     ns1:Localisation "None"^^xsd:string ;
     ns1:department "Vendée"^^xsd:string ;
@@ -2082,7 +2074,7 @@ ns1:1224 a ns1:Museum ;
     ns1:longitude "-2.231792"^^xsd:float ;
     ns1:name "musée des traditions"^^xsd:string .
 
-ns1:1225 a ns1:Museum ;
+ns1:1224 a ns1:Museum ;
     ns1:City 85310.0 ;
     ns1:Localisation "Mairie"^^xsd:string ;
     ns1:department "Vendée"^^xsd:string ;
@@ -2090,7 +2082,7 @@ ns1:1225 a ns1:Museum ;
     ns1:longitude "-1.292607"^^xsd:float ;
     ns1:name "musée ornithologique Charles-Payraudeau"^^xsd:string .
 
-ns1:1226 a ns1:Museum ;
+ns1:1225 a ns1:Museum ;
     ns1:City 85240.0 ;
     ns1:Localisation "La cour"^^xsd:string ;
     ns1:department "Vendée"^^xsd:string ;
@@ -2098,7 +2090,7 @@ ns1:1226 a ns1:Museum ;
     ns1:longitude "-0.630566"^^xsd:float ;
     ns1:name "centre minier"^^xsd:string .
 
-ns1:1227 a ns1:Museum ;
+ns1:1226 a ns1:Museum ;
     ns1:City 85330.0 ;
     ns1:Localisation "Place d'armes"^^xsd:string ;
     ns1:department "Vendée"^^xsd:string ;
@@ -2106,7 +2098,7 @@ ns1:1227 a ns1:Museum ;
     ns1:longitude "-2.243127"^^xsd:float ;
     ns1:name "musée du château"^^xsd:string .
 
-ns1:1228 a ns1:Museum ;
+ns1:1227 a ns1:Museum ;
     ns1:City 85170.0 ;
     ns1:Localisation "Allée Paul Bazin"^^xsd:string ;
     ns1:department "Vendée"^^xsd:string ;
@@ -2114,13 +2106,21 @@ ns1:1228 a ns1:Museum ;
     ns1:longitude "-1.492724"^^xsd:float ;
     ns1:name "Historial de la Vendée"^^xsd:string .
 
-ns1:1229 a ns1:Museum ;
+ns1:1228 a ns1:Museum ;
     ns1:City 85600.0 ;
     ns1:Localisation "Place de l'Hôtel de Ville"^^xsd:string ;
     ns1:department "Vendée"^^xsd:string ;
     ns1:latitude "46.974635"^^xsd:float ;
     ns1:longitude "-1.313386"^^xsd:float ;
     ns1:name "musée du nord Vendée"^^xsd:string .
+
+ns1:1229 a ns1:Museum ;
+    ns1:City 85300.0 ;
+    ns1:Localisation "84 chemin du Bois-Durand"^^xsd:string ;
+    ns1:department "Vendée"^^xsd:string ;
+    ns1:latitude "46.77769"^^xsd:float ;
+    ns1:longitude "-1.9097179999999998"^^xsd:float ;
+    ns1:name "musée Milcendeau-Jean Yole"^^xsd:string .
 
 ns1:123 a ns1:TrainStation ;
     ns1:City 73200 ;
@@ -2133,14 +2133,6 @@ ns1:123 a ns1:TrainStation ;
     ns1:wifi "Non"^^xsd:string .
 
 ns1:1230 a ns1:Museum ;
-    ns1:City 85300.0 ;
-    ns1:Localisation "84 chemin du Bois-Durand"^^xsd:string ;
-    ns1:department "Vendée"^^xsd:string ;
-    ns1:latitude "46.77769"^^xsd:float ;
-    ns1:longitude "-1.9097179999999998"^^xsd:float ;
-    ns1:name "musée Milcendeau-Jean Yole"^^xsd:string .
-
-ns1:1231 a ns1:Museum ;
     ns1:City 85390.0 ;
     ns1:Localisation "18 rue du Temple (Maison natale de Clemenceau)"^^xsd:string ;
     ns1:department "Vendée"^^xsd:string ;
@@ -2148,7 +2140,7 @@ ns1:1231 a ns1:Museum ;
     ns1:longitude "-0.8495349999999999"^^xsd:float ;
     ns1:name "musée Clémenceau et de Lattre de Tassigny"^^xsd:string .
 
-ns1:1232 a ns1:Museum ;
+ns1:1231 a ns1:Museum ;
     ns1:City 85200.0 ;
     ns1:Localisation "Place du 137e Régiment d'Infanterie"^^xsd:string ;
     ns1:department "Vendée"^^xsd:string ;
@@ -2156,7 +2148,7 @@ ns1:1232 a ns1:Museum ;
     ns1:longitude "-0.8068097391"^^xsd:float ;
     ns1:name "musée de Fontenay-le-Comte"^^xsd:string .
 
-ns1:1233 a ns1:Museum ;
+ns1:1232 a ns1:Museum ;
     ns1:City 85000.0 ;
     ns1:Localisation "10 rue Salvador Allende"^^xsd:string ;
     ns1:department "Vendée"^^xsd:string ;
@@ -2164,7 +2156,7 @@ ns1:1233 a ns1:Museum ;
     ns1:longitude "-1.428828"^^xsd:float ;
     ns1:name "musée municipal"^^xsd:string .
 
-ns1:1234 a ns1:Museum ;
+ns1:1233 a ns1:Museum ;
     ns1:City 85270.0 ;
     ns1:Localisation "4 chemin du Bois Juquaud"^^xsd:string ;
     ns1:department "Vendée"^^xsd:string ;
@@ -2172,7 +2164,7 @@ ns1:1234 a ns1:Museum ;
     ns1:longitude "-1.953276"^^xsd:float ;
     ns1:name "musée La Bourrine du Bois-Juquaud"^^xsd:string .
 
-ns1:1235 a ns1:Museum ;
+ns1:1234 a ns1:Museum ;
     ns1:City 85100.0 ;
     ns1:Localisation "Rue de Verdun"^^xsd:string ;
     ns1:department "Vendée"^^xsd:string ;
@@ -2180,7 +2172,7 @@ ns1:1235 a ns1:Museum ;
     ns1:longitude "-1.7773089999999998"^^xsd:float ;
     ns1:name "musée de l'abbaye Sainte-Croix"^^xsd:string .
 
-ns1:1236 a ns1:Museum ;
+ns1:1235 a ns1:Museum ;
     ns1:City 85330.0 ;
     ns1:Localisation "Rue de l'Ecluse"^^xsd:string ;
     ns1:department "Vendée"^^xsd:string ;
@@ -2188,7 +2180,7 @@ ns1:1236 a ns1:Museum ;
     ns1:longitude "-2.245756"^^xsd:float ;
     ns1:name "musée de la construction navale artisanale"^^xsd:string .
 
-ns1:1237 a ns1:Museum ;
+ns1:1236 a ns1:Museum ;
     ns1:City 4300.0 ;
     ns1:Localisation "Route nationale"^^xsd:string ;
     ns1:department "Alpes-de-Haute-Provence"^^xsd:string ;
@@ -2196,7 +2188,7 @@ ns1:1237 a ns1:Museum ;
     ns1:longitude "5.76727"^^xsd:float ;
     ns1:name "musée de Salagon"^^xsd:string .
 
-ns1:1238 a ns1:Museum ;
+ns1:1237 a ns1:Museum ;
     ns1:City 4500.0 ;
     ns1:Localisation "Route de Montmeyan"^^xsd:string ;
     ns1:department "Alpes-de-Haute-Provence"^^xsd:string ;
@@ -2204,13 +2196,21 @@ ns1:1238 a ns1:Museum ;
     ns1:longitude "6.040734"^^xsd:float ;
     ns1:name "musée départemental de préhistoire"^^xsd:string .
 
-ns1:1239 a ns1:Museum ;
+ns1:1238 a ns1:Museum ;
     ns1:City 4500.0 ;
     ns1:Localisation "Route de Marseille"^^xsd:string ;
     ns1:department "Alpes-de-Haute-Provence"^^xsd:string ;
     ns1:latitude "43.815415"^^xsd:float ;
     ns1:longitude "6.08717"^^xsd:float ;
     ns1:name "musée archéologique"^^xsd:string .
+
+ns1:1239 a ns1:Museum ;
+    ns1:City 4400.0 ;
+    ns1:Localisation "10, avenue de la Libération"^^xsd:string ;
+    ns1:department "Alpes-de-Haute-Provence"^^xsd:string ;
+    ns1:latitude "44.387609"^^xsd:float ;
+    ns1:longitude "6.655077"^^xsd:float ;
+    ns1:name "musée de la vallée"^^xsd:string .
 
 ns1:124 a ns1:TrainStation ;
     ns1:City 73700 ;
@@ -2223,14 +2223,6 @@ ns1:124 a ns1:TrainStation ;
     ns1:wifi "Oui"^^xsd:string .
 
 ns1:1240 a ns1:Museum ;
-    ns1:City 4400.0 ;
-    ns1:Localisation "10, avenue de la Libération"^^xsd:string ;
-    ns1:department "Alpes-de-Haute-Provence"^^xsd:string ;
-    ns1:latitude "44.387609"^^xsd:float ;
-    ns1:longitude "6.655077"^^xsd:float ;
-    ns1:name "musée de la vallée"^^xsd:string .
-
-ns1:1241 a ns1:Museum ;
     ns1:City 4000.0 ;
     ns1:Localisation "64 boulevard Gassendi"^^xsd:string ;
     ns1:department "Alpes-de-Haute-Provence"^^xsd:string ;
@@ -2238,7 +2230,7 @@ ns1:1241 a ns1:Museum ;
     ns1:longitude "6.235077"^^xsd:float ;
     ns1:name "musée Gassendi"^^xsd:string .
 
-ns1:1242 a ns1:Museum ;
+ns1:1241 a ns1:Museum ;
     ns1:City 4110.0 ;
     ns1:Localisation "Ecole publique"^^xsd:string ;
     ns1:department "Alpes-de-Haute-Provence"^^xsd:string ;
@@ -2246,7 +2238,7 @@ ns1:1242 a ns1:Museum ;
     ns1:longitude "5.6543700357999995"^^xsd:float ;
     ns1:name "musée archéologique"^^xsd:string .
 
-ns1:1243 a ns1:Museum ;
+ns1:1242 a ns1:Museum ;
     ns1:City 4301.0 ;
     ns1:Localisation "1 place du Bourguet"^^xsd:string ;
     ns1:department "Alpes-de-Haute-Provence"^^xsd:string ;
@@ -2254,7 +2246,7 @@ ns1:1243 a ns1:Museum ;
     ns1:longitude "5.7744061718"^^xsd:float ;
     ns1:name "musée municipal"^^xsd:string .
 
-ns1:1244 a ns1:Museum ;
+ns1:1243 a ns1:Museum ;
     ns1:City 4360.0 ;
     ns1:Localisation "None"^^xsd:string ;
     ns1:department "Alpes-de-Haute-Provence"^^xsd:string ;
@@ -2262,7 +2254,7 @@ ns1:1244 a ns1:Museum ;
     ns1:longitude "6.220175"^^xsd:float ;
     ns1:name "musée de la faïence"^^xsd:string .
 
-ns1:1245 a ns1:Museum ;
+ns1:1244 a ns1:Museum ;
     ns1:City 4200.0 ;
     ns1:Localisation "8 rue saunerie"^^xsd:string ;
     ns1:department "Alpes-de-Haute-Provence"^^xsd:string ;
@@ -2270,7 +2262,7 @@ ns1:1245 a ns1:Museum ;
     ns1:longitude "5.944839"^^xsd:float ;
     ns1:name "musée gallo-romain Sisteron"^^xsd:string .
 
-ns1:1246 a ns1:Museum ;
+ns1:1245 a ns1:Museum ;
     ns1:City 6600.0 ;
     ns1:Localisation "Place Mariejol"^^xsd:string ;
     ns1:department "Alpes-Maritimes"^^xsd:string ;
@@ -2278,7 +2270,7 @@ ns1:1246 a ns1:Museum ;
     ns1:longitude "7.127959"^^xsd:float ;
     ns1:name "musée Picasso"^^xsd:string .
 
-ns1:1247 a ns1:Museum ;
+ns1:1246 a ns1:Museum ;
     ns1:City 6500.0 ;
     ns1:Localisation "Quai Napoléon III"^^xsd:string ;
     ns1:department "Alpes-Maritimes"^^xsd:string ;
@@ -2286,7 +2278,7 @@ ns1:1247 a ns1:Museum ;
     ns1:longitude "7.508676"^^xsd:float ;
     ns1:name "musée Jean Cocteau"^^xsd:string .
 
-ns1:1248 a ns1:Museum ;
+ns1:1247 a ns1:Museum ;
     ns1:City 6000.0 ;
     ns1:Localisation "65 rue de France"^^xsd:string ;
     ns1:department "Alpes-Maritimes"^^xsd:string ;
@@ -2294,13 +2286,21 @@ ns1:1248 a ns1:Museum ;
     ns1:longitude "7.259251"^^xsd:float ;
     ns1:name "musée Masséna"^^xsd:string .
 
-ns1:1249 a ns1:Museum ;
+ns1:1248 a ns1:Museum ;
     ns1:City 6000.0 ;
     ns1:Localisation "160 avenue des Arènes Cimiez"^^xsd:string ;
     ns1:department "Alpes-Maritimes"^^xsd:string ;
     ns1:latitude "43.719221"^^xsd:float ;
     ns1:longitude "7.2751149999999996"^^xsd:float ;
     ns1:name "musée archéologique de Cimiez"^^xsd:string .
+
+ns1:1249 a ns1:Museum ;
+    ns1:City 6300.0 ;
+    ns1:Localisation "25 boulevard Carnot"^^xsd:string ;
+    ns1:department "Alpes-Maritimes"^^xsd:string ;
+    ns1:latitude "43.698046"^^xsd:float ;
+    ns1:longitude "7.288686"^^xsd:float ;
+    ns1:name "musée de paléontologie de Terra Amata"^^xsd:string .
 
 ns1:125 a ns1:TrainStation ;
     ns1:City 73010 ;
@@ -2313,14 +2313,6 @@ ns1:125 a ns1:TrainStation ;
     ns1:wifi "Oui"^^xsd:string .
 
 ns1:1250 a ns1:Museum ;
-    ns1:City 6300.0 ;
-    ns1:Localisation "25 boulevard Carnot"^^xsd:string ;
-    ns1:department "Alpes-Maritimes"^^xsd:string ;
-    ns1:latitude "43.698046"^^xsd:float ;
-    ns1:longitude "7.288686"^^xsd:float ;
-    ns1:name "musée de paléontologie de Terra Amata"^^xsd:string .
-
-ns1:1251 a ns1:Museum ;
     ns1:City 6200.0 ;
     ns1:Localisation "405 promenade des Anglais"^^xsd:string ;
     ns1:department "Alpes-Maritimes"^^xsd:string ;
@@ -2328,7 +2320,7 @@ ns1:1251 a ns1:Museum ;
     ns1:longitude "7.215461"^^xsd:float ;
     ns1:name "musée départemental des arts asiatiques"^^xsd:string .
 
-ns1:1252 a ns1:Museum ;
+ns1:1251 a ns1:Museum ;
     ns1:City 6230.0 ;
     ns1:Localisation "La Citadelle"^^xsd:string ;
     ns1:department "Alpes-Maritimes"^^xsd:string ;
@@ -2336,7 +2328,7 @@ ns1:1252 a ns1:Museum ;
     ns1:longitude "7.311425"^^xsd:float ;
     ns1:name "musée d'art et d'histoire"^^xsd:string .
 
-ns1:1253 a ns1:Museum ;
+ns1:1252 a ns1:Museum ;
     ns1:City 6410.0 ;
     ns1:Localisation "Chemin du Val-de-Pome"^^xsd:string ;
     ns1:department "Alpes-Maritimes"^^xsd:string ;
@@ -2344,7 +2336,7 @@ ns1:1253 a ns1:Museum ;
     ns1:longitude "7.112317"^^xsd:float ;
     ns1:name "musée national Fernand Léger"^^xsd:string .
 
-ns1:1254 a ns1:Museum ;
+ns1:1253 a ns1:Museum ;
     ns1:City 6220.0 ;
     ns1:Localisation "Place de la Libération"^^xsd:string ;
     ns1:department "Alpes-Maritimes"^^xsd:string ;
@@ -2352,7 +2344,7 @@ ns1:1254 a ns1:Museum ;
     ns1:longitude "7.052887"^^xsd:float ;
     ns1:name "musée national de Vallauris (la Guerre et la Paix de Picasso)"^^xsd:string .
 
-ns1:1255 a ns1:Museum ;
+ns1:1254 a ns1:Museum ;
     ns1:City 6300.0 ;
     ns1:Localisation "60 boulevard Risso"^^xsd:string ;
     ns1:department "Alpes-Maritimes"^^xsd:string ;
@@ -2360,7 +2352,7 @@ ns1:1255 a ns1:Museum ;
     ns1:longitude "7.279572"^^xsd:float ;
     ns1:name "muséum d'histoire naturelle"^^xsd:string .
 
-ns1:1256 a ns1:Museum ;
+ns1:1255 a ns1:Museum ;
     ns1:City 6400.0 ;
     ns1:Localisation "Ile Sainte-Marguerite"^^xsd:string ;
     ns1:department "Alpes-Maritimes"^^xsd:string ;
@@ -2368,7 +2360,7 @@ ns1:1256 a ns1:Museum ;
     ns1:longitude "7.044228"^^xsd:float ;
     ns1:name "musée de la mer"^^xsd:string .
 
-ns1:1257 a ns1:Museum ;
+ns1:1256 a ns1:Museum ;
     ns1:City 6130.0 ;
     ns1:Localisation "2 rue Mirabeau"^^xsd:string ;
     ns1:department "Alpes-Maritimes"^^xsd:string ;
@@ -2376,7 +2368,7 @@ ns1:1257 a ns1:Museum ;
     ns1:longitude "6.922508"^^xsd:float ;
     ns1:name "musée d'art et d'histoire de Provence"^^xsd:string .
 
-ns1:1258 a ns1:Museum ;
+ns1:1257 a ns1:Museum ;
     ns1:City 6130.0 ;
     ns1:Localisation "23 boulevard Fragonard"^^xsd:string ;
     ns1:department "Alpes-Maritimes"^^xsd:string ;
@@ -2384,13 +2376,21 @@ ns1:1258 a ns1:Museum ;
     ns1:longitude "6.921091"^^xsd:float ;
     ns1:name "musée Fragonard"^^xsd:string .
 
-ns1:1259 a ns1:Museum ;
+ns1:1258 a ns1:Museum ;
     ns1:City 6500.0 ;
     ns1:Localisation "3 avenue de la Madone"^^xsd:string ;
     ns1:department "Alpes-Maritimes"^^xsd:string ;
     ns1:latitude "43.766659"^^xsd:float ;
     ns1:longitude "7.4884"^^xsd:float ;
     ns1:name "musée des beaux-arts"^^xsd:string .
+
+ns1:1259 a ns1:Museum ;
+    ns1:City 6000.0 ;
+    ns1:Localisation "164 avenue des Arènes de Cimiez"^^xsd:string ;
+    ns1:department "Alpes-Maritimes"^^xsd:string ;
+    ns1:latitude "43.720041"^^xsd:float ;
+    ns1:longitude "7.276769"^^xsd:float ;
+    ns1:name "musée Matisse"^^xsd:string .
 
 ns1:126 a ns1:TrainStation ;
     ns1:City 73210 ;
@@ -2403,14 +2403,6 @@ ns1:126 a ns1:TrainStation ;
     ns1:wifi "Non"^^xsd:string .
 
 ns1:1260 a ns1:Museum ;
-    ns1:City 6000.0 ;
-    ns1:Localisation "164 avenue des Arènes de Cimiez"^^xsd:string ;
-    ns1:department "Alpes-Maritimes"^^xsd:string ;
-    ns1:latitude "43.720041"^^xsd:float ;
-    ns1:longitude "7.276769"^^xsd:float ;
-    ns1:name "musée Matisse"^^xsd:string .
-
-ns1:1261 a ns1:Museum ;
     ns1:City 6600.0 ;
     ns1:Localisation "Avenue Maizière"^^xsd:string ;
     ns1:department "Alpes-Maritimes"^^xsd:string ;
@@ -2418,7 +2410,7 @@ ns1:1261 a ns1:Museum ;
     ns1:longitude "7.124074"^^xsd:float ;
     ns1:name "musée d'archéologie"^^xsd:string .
 
-ns1:1262 a ns1:Museum ;
+ns1:1261 a ns1:Museum ;
     ns1:City 6130.0 ;
     ns1:Localisation "2 boulevard du Jeu de Ballon"^^xsd:string ;
     ns1:department "Alpes-Maritimes"^^xsd:string ;
@@ -2426,7 +2418,7 @@ ns1:1262 a ns1:Museum ;
     ns1:longitude "6.922"^^xsd:float ;
     ns1:name "musée international de la parfumerie"^^xsd:string .
 
-ns1:1263 a ns1:Museum ;
+ns1:1262 a ns1:Museum ;
     ns1:City 6000.0 ;
     ns1:Localisation "59 avenue Saint Barthélémy"^^xsd:string ;
     ns1:department "Alpes-Maritimes"^^xsd:string ;
@@ -2434,7 +2426,7 @@ ns1:1263 a ns1:Museum ;
     ns1:longitude "7.238038"^^xsd:float ;
     ns1:name "musée du vieux logis"^^xsd:string .
 
-ns1:1264 a ns1:Museum ;
+ns1:1263 a ns1:Museum ;
     ns1:City 6300.0 ;
     ns1:Localisation "15 rue Droite"^^xsd:string ;
     ns1:department "Alpes-Maritimes"^^xsd:string ;
@@ -2442,7 +2434,7 @@ ns1:1264 a ns1:Museum ;
     ns1:longitude "7.27733"^^xsd:float ;
     ns1:name "musée du palais Lascaris"^^xsd:string .
 
-ns1:1265 a ns1:Museum ;
+ns1:1264 a ns1:Museum ;
     ns1:City 6220.0 ;
     ns1:Localisation "Place de la Libération"^^xsd:string ;
     ns1:department "Alpes-Maritimes"^^xsd:string ;
@@ -2450,7 +2442,7 @@ ns1:1265 a ns1:Museum ;
     ns1:longitude "7.052887"^^xsd:float ;
     ns1:name "musée Magnelli - musée de la céramique"^^xsd:string .
 
-ns1:1266 a ns1:Museum ;
+ns1:1265 a ns1:Museum ;
     ns1:City 6410.0 ;
     ns1:Localisation "9 rue Saint-Sébastien"^^xsd:string ;
     ns1:department "Alpes-Maritimes"^^xsd:string ;
@@ -2458,7 +2450,7 @@ ns1:1266 a ns1:Museum ;
     ns1:longitude "7.098469"^^xsd:float ;
     ns1:name "musée d'histoire locale"^^xsd:string .
 
-ns1:1267 a ns1:Museum ;
+ns1:1266 a ns1:Museum ;
     ns1:City 6400.0 ;
     ns1:Localisation "Le Suquet"^^xsd:string ;
     ns1:department "Alpes-Maritimes"^^xsd:string ;
@@ -2466,7 +2458,7 @@ ns1:1267 a ns1:Museum ;
     ns1:longitude "7.010034"^^xsd:float ;
     ns1:name "musée de la Castre"^^xsd:string .
 
-ns1:1268 a ns1:Museum ;
+ns1:1267 a ns1:Museum ;
     ns1:City 6500.0 ;
     ns1:Localisation "20, rue Lorédan-Larchey"^^xsd:string ;
     ns1:department "Alpes-Maritimes"^^xsd:string ;
@@ -2474,13 +2466,21 @@ ns1:1268 a ns1:Museum ;
     ns1:longitude "7.503564"^^xsd:float ;
     ns1:name "musée de préhistoire régionale"^^xsd:string .
 
-ns1:1269 a ns1:Museum ;
+ns1:1268 a ns1:Museum ;
     ns1:City 6364.0 ;
     ns1:Localisation "33 avenue des Baumettes"^^xsd:string ;
     ns1:department "Alpes-Maritimes"^^xsd:string ;
     ns1:latitude "43.694675625"^^xsd:float ;
     ns1:longitude "7.2494704995"^^xsd:float ;
     ns1:name "musée des beaux-arts Jules Chéret"^^xsd:string .
+
+ns1:1269 a ns1:Museum ;
+    ns1:City 6200.0 ;
+    ns1:Localisation "23 avenue de Fabron"^^xsd:string ;
+    ns1:department "Alpes-Maritimes"^^xsd:string ;
+    ns1:latitude "43.68784"^^xsd:float ;
+    ns1:longitude "7.231462"^^xsd:float ;
+    ns1:name "musée d'art naïf Anatole Jakovsky"^^xsd:string .
 
 ns1:127 a ns1:TrainStation ;
     ns1:City 73500 ;
@@ -2493,14 +2493,6 @@ ns1:127 a ns1:TrainStation ;
     ns1:wifi "Non"^^xsd:string .
 
 ns1:1270 a ns1:Museum ;
-    ns1:City 6200.0 ;
-    ns1:Localisation "23 avenue de Fabron"^^xsd:string ;
-    ns1:department "Alpes-Maritimes"^^xsd:string ;
-    ns1:latitude "43.68784"^^xsd:float ;
-    ns1:longitude "7.231462"^^xsd:float ;
-    ns1:name "musée d'art naïf Anatole Jakovsky"^^xsd:string .
-
-ns1:1271 a ns1:Museum ;
     ns1:City 6364.0 ;
     ns1:Localisation "Place Yves Klein"^^xsd:string ;
     ns1:department "Alpes-Maritimes"^^xsd:string ;
@@ -2508,7 +2500,7 @@ ns1:1271 a ns1:Museum ;
     ns1:longitude "7.2789842995"^^xsd:float ;
     ns1:name "musée d'art moderne et d'art contemporain"^^xsd:string .
 
-ns1:1272 a ns1:Museum ;
+ns1:1271 a ns1:Museum ;
     ns1:City 6430.0 ;
     ns1:Localisation "Avenue du 16 septembre 1947"^^xsd:string ;
     ns1:department "Alpes-Maritimes"^^xsd:string ;
@@ -2516,7 +2508,7 @@ ns1:1272 a ns1:Museum ;
     ns1:longitude "7.593216"^^xsd:float ;
     ns1:name "musée des merveilles"^^xsd:string .
 
-ns1:1273 a ns1:Museum ;
+ns1:1272 a ns1:Museum ;
     ns1:City 6200.0 ;
     ns1:Localisation "Boulevard des jardiniers - Stade Allianz Riviera"^^xsd:string ;
     ns1:department "Alpes-Maritimes"^^xsd:string ;
@@ -2524,7 +2516,7 @@ ns1:1273 a ns1:Museum ;
     ns1:longitude "7.191059"^^xsd:float ;
     ns1:name "musée national du sport"^^xsd:string .
 
-ns1:1274 a ns1:Museum ;
+ns1:1273 a ns1:Museum ;
     ns1:City 6000.0 ;
     ns1:Localisation "Avenue du Docteur-Ménard"^^xsd:string ;
     ns1:department "Alpes-Maritimes"^^xsd:string ;
@@ -2532,7 +2524,7 @@ ns1:1274 a ns1:Museum ;
     ns1:longitude "7.2688"^^xsd:float ;
     ns1:name "musée national Message biblique Marc Chagall"^^xsd:string .
 
-ns1:1275 a ns1:Museum ;
+ns1:1274 a ns1:Museum ;
     ns1:City 6800.0 ;
     ns1:Localisation "Place Grimaldi, Haut-de-Cagnes"^^xsd:string ;
     ns1:department "Alpes-Maritimes"^^xsd:string ;
@@ -2540,7 +2532,7 @@ ns1:1275 a ns1:Museum ;
     ns1:longitude "7.145213"^^xsd:float ;
     ns1:name "musée-château"^^xsd:string .
 
-ns1:1276 a ns1:Museum ;
+ns1:1275 a ns1:Museum ;
     ns1:City 6800.0 ;
     ns1:Localisation "Domaine des Collettes - 19 chemin des Collettes"^^xsd:string ;
     ns1:department "Alpes-Maritimes"^^xsd:string ;
@@ -2548,7 +2540,7 @@ ns1:1276 a ns1:Museum ;
     ns1:longitude "7.156541"^^xsd:float ;
     ns1:name "musée Renoir"^^xsd:string .
 
-ns1:1277 a ns1:Museum ;
+ns1:1276 a ns1:Museum ;
     ns1:City 62060.0 ;
     ns1:Localisation "Place des Tilleuls"^^xsd:string ;
     ns1:department "Alpes-Maritimes"^^xsd:string ;
@@ -2556,7 +2548,7 @@ ns1:1277 a ns1:Museum ;
     ns1:longitude "6.9198411204"^^xsd:float ;
     ns1:name "écomusée de la Roudoule"^^xsd:string .
 
-ns1:1278 a ns1:Museum ;
+ns1:1277 a ns1:Museum ;
     ns1:City 6110.0 ;
     ns1:Localisation "16 boulevard Sadi Carnot"^^xsd:string ;
     ns1:department "Alpes-Maritimes"^^xsd:string ;
@@ -2564,13 +2556,21 @@ ns1:1278 a ns1:Museum ;
     ns1:longitude "7.019853"^^xsd:float ;
     ns1:name "musée Bonnard"^^xsd:string .
 
-ns1:1279 a ns1:Museum ;
+ns1:1278 a ns1:Museum ;
     ns1:City 13200.0 ;
     ns1:Localisation "29 rue de la République"^^xsd:string ;
     ns1:department "Bouches-du-Rhône"^^xsd:string ;
     ns1:latitude "43.54073"^^xsd:float ;
     ns1:longitude "4.676089"^^xsd:float ;
     ns1:name "museon Arlaten"^^xsd:string .
+
+ns1:1279 a ns1:Museum ;
+    ns1:City 13260.0 ;
+    ns1:Localisation "rue Xavier d'Authier"^^xsd:string ;
+    ns1:department "Bouches-du-Rhône"^^xsd:string ;
+    ns1:latitude "43.214464"^^xsd:float ;
+    ns1:longitude "5.540037"^^xsd:float ;
+    ns1:name "musée municipal d'arts et traditions populaires"^^xsd:string .
 
 ns1:128 a ns1:TrainStation ;
     ns1:City 73600 ;
@@ -2583,14 +2583,6 @@ ns1:128 a ns1:TrainStation ;
     ns1:wifi "Oui"^^xsd:string .
 
 ns1:1280 a ns1:Museum ;
-    ns1:City 13260.0 ;
-    ns1:Localisation "rue Xavier d'Authier"^^xsd:string ;
-    ns1:department "Bouches-du-Rhône"^^xsd:string ;
-    ns1:latitude "43.214464"^^xsd:float ;
-    ns1:longitude "5.540037"^^xsd:float ;
-    ns1:name "musée municipal d'arts et traditions populaires"^^xsd:string .
-
-ns1:1281 a ns1:Museum ;
     ns1:City 13008.0 ;
     ns1:Localisation "143 avenue Clot-Bey"^^xsd:string ;
     ns1:department "Bouches-du-Rhône"^^xsd:string ;
@@ -2598,7 +2590,7 @@ ns1:1281 a ns1:Museum ;
     ns1:longitude "5.384175"^^xsd:float ;
     ns1:name "musée des arts décoratifs, de la faïence et de la mode"^^xsd:string .
 
-ns1:1282 a ns1:Museum ;
+ns1:1281 a ns1:Museum ;
     ns1:City 13002.0 ;
     ns1:Localisation "28 Place Vivaux"^^xsd:string ;
     ns1:department "Bouches-du-Rhône"^^xsd:string ;
@@ -2606,7 +2598,7 @@ ns1:1282 a ns1:Museum ;
     ns1:longitude "5.367908"^^xsd:float ;
     ns1:name "musée des docks romains"^^xsd:string .
 
-ns1:1283 a ns1:Museum ;
+ns1:1282 a ns1:Museum ;
     ns1:City 13002.0 ;
     ns1:Localisation "2 rue de La Charité"^^xsd:string ;
     ns1:department "Bouches-du-Rhône"^^xsd:string ;
@@ -2614,7 +2606,7 @@ ns1:1283 a ns1:Museum ;
     ns1:longitude "5.367602"^^xsd:float ;
     ns1:name "musée d'archéologie méditerranéenne"^^xsd:string .
 
-ns1:1284 a ns1:Museum ;
+ns1:1283 a ns1:Museum ;
     ns1:City 13100.0 ;
     ns1:Localisation "34 rue Célony ou 13 rue de la Molle"^^xsd:string ;
     ns1:department "Bouches-du-Rhône"^^xsd:string ;
@@ -2622,7 +2614,7 @@ ns1:1284 a ns1:Museum ;
     ns1:longitude "5.439915"^^xsd:float ;
     ns1:name "musée du pavillon de Vendôme"^^xsd:string .
 
-ns1:1285 a ns1:Museum ;
+ns1:1284 a ns1:Museum ;
     ns1:City 13635.0 ;
     ns1:Localisation "Presqu'île du cirque romain"^^xsd:string ;
     ns1:department "Bouches-du-Rhône"^^xsd:string ;
@@ -2630,7 +2622,7 @@ ns1:1285 a ns1:Museum ;
     ns1:longitude "4.6171758302"^^xsd:float ;
     ns1:name "musée de l'Arles antique"^^xsd:string .
 
-ns1:1286 a ns1:Museum ;
+ns1:1285 a ns1:Museum ;
     ns1:City 13200.0 ;
     ns1:Localisation "Parc naturel régional de Camargue"^^xsd:string ;
     ns1:department "Bouches-du-Rhône"^^xsd:string ;
@@ -2638,7 +2630,7 @@ ns1:1286 a ns1:Museum ;
     ns1:longitude "4.61542"^^xsd:float ;
     ns1:name "musée camarguais"^^xsd:string .
 
-ns1:1287 a ns1:Museum ;
+ns1:1286 a ns1:Museum ;
     ns1:City 13808.0 ;
     ns1:Localisation "Métropole Aix Marseille Provence / Istres Ouest Provence"^^xsd:string ;
     ns1:department "Bouches-du-Rhône"^^xsd:string ;
@@ -2646,7 +2638,7 @@ ns1:1287 a ns1:Museum ;
     ns1:longitude "4.9911014111"^^xsd:float ;
     ns1:name "musée René Beaucaire"^^xsd:string .
 
-ns1:1288 a ns1:Museum ;
+ns1:1287 a ns1:Museum ;
     ns1:City 13520.0 ;
     ns1:Localisation "Grand-rue Frédéric Mistral Le Village"^^xsd:string ;
     ns1:department "Bouches-du-Rhône"^^xsd:string ;
@@ -2654,13 +2646,21 @@ ns1:1288 a ns1:Museum ;
     ns1:longitude "4.795333"^^xsd:float ;
     ns1:name "musée-fondation Louis Jou"^^xsd:string .
 
-ns1:1289 a ns1:Museum ;
+ns1:1288 a ns1:Museum ;
     ns1:City 13520.0 ;
     ns1:Localisation "None"^^xsd:string ;
     ns1:department "Bouches-du-Rhône"^^xsd:string ;
     ns1:latitude "43.743732"^^xsd:float ;
     ns1:longitude "4.794938"^^xsd:float ;
     ns1:name "musée d'histoire et d'archéologie des Baux-de-Provence"^^xsd:string .
+
+ns1:1289 a ns1:Museum ;
+    ns1:City 13001.0 ;
+    ns1:Localisation "140 boulevard Lonchamp"^^xsd:string ;
+    ns1:department "Bouches-du-Rhône"^^xsd:string ;
+    ns1:latitude "43.303412"^^xsd:float ;
+    ns1:longitude "5.392866"^^xsd:float ;
+    ns1:name "musée Grobet-Labadié"^^xsd:string .
 
 ns1:129 a ns1:TrainStation ;
     ns1:City 73130 ;
@@ -2674,21 +2674,13 @@ ns1:129 a ns1:TrainStation ;
 
 ns1:1290 a ns1:Museum ;
     ns1:City 13001.0 ;
-    ns1:Localisation "140 boulevard Lonchamp"^^xsd:string ;
-    ns1:department "Bouches-du-Rhône"^^xsd:string ;
-    ns1:latitude "43.303412"^^xsd:float ;
-    ns1:longitude "5.392866"^^xsd:float ;
-    ns1:name "musée Grobet-Labadié"^^xsd:string .
-
-ns1:1291 a ns1:Museum ;
-    ns1:City 13001.0 ;
     ns1:Localisation "2, rue Henri Barbusse"^^xsd:string ;
     ns1:department "Bouches-du-Rhône"^^xsd:string ;
     ns1:latitude "43.298168"^^xsd:float ;
     ns1:longitude "5.374162"^^xsd:float ;
     ns1:name "musée d'histoire de Marseille"^^xsd:string .
 
-ns1:1292 a ns1:Museum ;
+ns1:1291 a ns1:Museum ;
     ns1:City 13500.0 ;
     ns1:Localisation "9, Boulevard du 14 juillet"^^xsd:string ;
     ns1:department "Bouches-du-Rhône"^^xsd:string ;
@@ -2696,7 +2688,7 @@ ns1:1292 a ns1:Museum ;
     ns1:longitude "5.054107"^^xsd:float ;
     ns1:name "musée Ziem"^^xsd:string .
 
-ns1:1293 a ns1:Museum ;
+ns1:1292 a ns1:Museum ;
     ns1:City 13210.0 ;
     ns1:Localisation "1 Place Favier"^^xsd:string ;
     ns1:department "Bouches-du-Rhône"^^xsd:string ;
@@ -2704,7 +2696,7 @@ ns1:1293 a ns1:Museum ;
     ns1:longitude "4.831075"^^xsd:float ;
     ns1:name "musée des Alpilles Pierre de Brun"^^xsd:string .
 
-ns1:1294 a ns1:Museum ;
+ns1:1293 a ns1:Museum ;
     ns1:City 13090.0 ;
     ns1:Localisation "9 avenue Paul Cézanne"^^xsd:string ;
     ns1:department "Bouches-du-Rhône"^^xsd:string ;
@@ -2712,7 +2704,7 @@ ns1:1294 a ns1:Museum ;
     ns1:longitude "5.446601"^^xsd:float ;
     ns1:name "musée de l'atelier de Paul Cézanne"^^xsd:string .
 
-ns1:1295 a ns1:Museum ;
+ns1:1294 a ns1:Museum ;
     ns1:City 13100.0 ;
     ns1:Localisation "28, place des Martyrs de la Résistance"^^xsd:string ;
     ns1:department "Bouches-du-Rhône"^^xsd:string ;
@@ -2720,7 +2712,7 @@ ns1:1295 a ns1:Museum ;
     ns1:longitude "5.447546"^^xsd:float ;
     ns1:name "musée des tapisseries"^^xsd:string .
 
-ns1:1296 a ns1:Museum ;
+ns1:1295 a ns1:Museum ;
     ns1:City 13200.0 ;
     ns1:Localisation "10 rue du Grand Prieuré"^^xsd:string ;
     ns1:department "Bouches-du-Rhône"^^xsd:string ;
@@ -2728,7 +2720,7 @@ ns1:1296 a ns1:Museum ;
     ns1:longitude "4.627903"^^xsd:float ;
     ns1:name "musée Réattu"^^xsd:string .
 
-ns1:1297 a ns1:Museum ;
+ns1:1296 a ns1:Museum ;
     ns1:City 13390.0 ;
     ns1:Localisation "avenue des Moulins"^^xsd:string ;
     ns1:department "Bouches-du-Rhône"^^xsd:string ;
@@ -2736,7 +2728,7 @@ ns1:1297 a ns1:Museum ;
     ns1:longitude "5.679968"^^xsd:float ;
     ns1:name "musée Alphonse Daudet"^^xsd:string .
 
-ns1:1298 a ns1:Museum ;
+ns1:1297 a ns1:Museum ;
     ns1:City 13410.0 ;
     ns1:Localisation "2 rue du Jas"^^xsd:string ;
     ns1:department "Bouches-du-Rhône"^^xsd:string ;
@@ -2744,13 +2736,21 @@ ns1:1298 a ns1:Museum ;
     ns1:longitude "5.261964"^^xsd:float ;
     ns1:name "musée folklorique du vieux Lambesc"^^xsd:string .
 
-ns1:1299 a ns1:Museum ;
+ns1:1298 a ns1:Museum ;
     ns1:City 13233.0 ;
     ns1:Localisation "Musée des Beaux-Arts"^^xsd:string ;
     ns1:department "Bouches-du-Rhône"^^xsd:string ;
     ns1:latitude "43.3047186379"^^xsd:float ;
     ns1:longitude "5.3940414577"^^xsd:float ;
     ns1:name "musée des beaux-arts"^^xsd:string .
+
+ns1:1299 a ns1:Museum ;
+    ns1:City 13460.0 ;
+    ns1:Localisation "6 avenue Théodore Aubanel"^^xsd:string ;
+    ns1:department "Bouches-du-Rhône"^^xsd:string ;
+    ns1:latitude "43.45124"^^xsd:float ;
+    ns1:longitude "4.427775"^^xsd:float ;
+    ns1:name "musée Baroncelli"^^xsd:string .
 
 ns1:13 a ns1:TrainStation ;
     ns1:City 11100 ;
@@ -2773,14 +2773,6 @@ ns1:130 a ns1:TrainStation ;
     ns1:wifi "Oui"^^xsd:string .
 
 ns1:1300 a ns1:Museum ;
-    ns1:City 13460.0 ;
-    ns1:Localisation "6 avenue Théodore Aubanel"^^xsd:string ;
-    ns1:department "Bouches-du-Rhône"^^xsd:string ;
-    ns1:latitude "43.45124"^^xsd:float ;
-    ns1:longitude "4.427775"^^xsd:float ;
-    ns1:name "musée Baroncelli"^^xsd:string .
-
-ns1:1301 a ns1:Museum ;
     ns1:City 13008.0 ;
     ns1:Localisation "69 avenue d'Haïfa"^^xsd:string ;
     ns1:department "Bouches-du-Rhône"^^xsd:string ;
@@ -2788,7 +2780,7 @@ ns1:1301 a ns1:Museum ;
     ns1:longitude "5.389874"^^xsd:float ;
     ns1:name "musée d'art contemporain - galeries contemporaines"^^xsd:string .
 
-ns1:1302 a ns1:Museum ;
+ns1:1301 a ns1:Museum ;
     ns1:City 13004.0 ;
     ns1:Localisation "7 rue Edouard Stephan"^^xsd:string ;
     ns1:department "Bouches-du-Rhône"^^xsd:string ;
@@ -2796,7 +2788,7 @@ ns1:1302 a ns1:Museum ;
     ns1:longitude "5.394121"^^xsd:float ;
     ns1:name "muséum d'histoire naturelle"^^xsd:string .
 
-ns1:1303 a ns1:Museum ;
+ns1:1302 a ns1:Museum ;
     ns1:City 13090.0 ;
     ns1:Localisation "7 allée des robiniers"^^xsd:string ;
     ns1:department "Bouches-du-Rhône"^^xsd:string ;
@@ -2804,7 +2796,7 @@ ns1:1303 a ns1:Museum ;
     ns1:longitude "5.423327"^^xsd:float ;
     ns1:name "muséum d'histoire naturelle"^^xsd:string .
 
-ns1:1304 a ns1:Museum ;
+ns1:1303 a ns1:Museum ;
     ns1:City 13100.0 ;
     ns1:Localisation "2A rue du Quatre-Septembre"^^xsd:string ;
     ns1:department "Bouches-du-Rhône"^^xsd:string ;
@@ -2812,7 +2804,7 @@ ns1:1304 a ns1:Museum ;
     ns1:longitude "5.449931"^^xsd:float ;
     ns1:name "musée Paul Arbaud"^^xsd:string .
 
-ns1:1305 a ns1:Museum ;
+ns1:1304 a ns1:Museum ;
     ns1:City 13600.0 ;
     ns1:Localisation "1 quai Ganteaume"^^xsd:string ;
     ns1:department "Bouches-du-Rhône"^^xsd:string ;
@@ -2820,7 +2812,7 @@ ns1:1305 a ns1:Museum ;
     ns1:longitude "5.60973"^^xsd:float ;
     ns1:name "musée ciotaden"^^xsd:string .
 
-ns1:1306 a ns1:Museum ;
+ns1:1305 a ns1:Museum ;
     ns1:City 13910.0 ;
     ns1:Localisation "11 rue Lamartine"^^xsd:string ;
     ns1:department "Bouches-du-Rhône"^^xsd:string ;
@@ -2828,7 +2820,7 @@ ns1:1306 a ns1:Museum ;
     ns1:longitude "4.782653"^^xsd:float ;
     ns1:name "musée Frédéric Mistral"^^xsd:string .
 
-ns1:1307 a ns1:Museum ;
+ns1:1306 a ns1:Museum ;
     ns1:City 13006.0 ;
     ns1:Localisation "19 rue Grignan"^^xsd:string ;
     ns1:department "Bouches-du-Rhône"^^xsd:string ;
@@ -2836,7 +2828,7 @@ ns1:1307 a ns1:Museum ;
     ns1:longitude "5.378137"^^xsd:float ;
     ns1:name "musée Cantini"^^xsd:string .
 
-ns1:1308 a ns1:Museum ;
+ns1:1307 a ns1:Museum ;
     ns1:City 13300.0 ;
     ns1:Localisation "avenue Roger Donnadieu"^^xsd:string ;
     ns1:department "Bouches-du-Rhône"^^xsd:string ;
@@ -2844,13 +2836,21 @@ ns1:1308 a ns1:Museum ;
     ns1:longitude "5.104363"^^xsd:float ;
     ns1:name "musée de Salon et de la Crau"^^xsd:string .
 
-ns1:1309 a ns1:Museum ;
+ns1:1308 a ns1:Museum ;
     ns1:City 13300.0 ;
     ns1:Localisation "None"^^xsd:string ;
     ns1:department "Bouches-du-Rhône"^^xsd:string ;
     ns1:latitude "43.640227"^^xsd:float ;
     ns1:longitude "5.096576"^^xsd:float ;
     ns1:name "musée de l'Emperi"^^xsd:string .
+
+ns1:1309 a ns1:Museum ;
+    ns1:City 13210.0 ;
+    ns1:Localisation "8 rue Lucien Estrine"^^xsd:string ;
+    ns1:department "Bouches-du-Rhône"^^xsd:string ;
+    ns1:latitude "43.788801"^^xsd:float ;
+    ns1:longitude "4.832266"^^xsd:float ;
+    ns1:name "musée Estrine"^^xsd:string .
 
 ns1:131 a ns1:TrainStation ;
     ns1:City 74100 ;
@@ -2863,14 +2863,6 @@ ns1:131 a ns1:TrainStation ;
     ns1:wifi "Non"^^xsd:string .
 
 ns1:1310 a ns1:Museum ;
-    ns1:City 13210.0 ;
-    ns1:Localisation "8 rue Lucien Estrine"^^xsd:string ;
-    ns1:department "Bouches-du-Rhône"^^xsd:string ;
-    ns1:latitude "43.788801"^^xsd:float ;
-    ns1:longitude "4.832266"^^xsd:float ;
-    ns1:name "musée Estrine"^^xsd:string .
-
-ns1:1311 a ns1:Museum ;
     ns1:City 13096.0 ;
     ns1:Localisation "1, Avenue Marcel Pagnol"^^xsd:string ;
     ns1:department "Bouches-du-Rhône"^^xsd:string ;
@@ -2878,7 +2870,7 @@ ns1:1311 a ns1:Museum ;
     ns1:longitude "5.4246447791"^^xsd:float ;
     ns1:name "Fondation Vasarely"^^xsd:string .
 
-ns1:1312 a ns1:Museum ;
+ns1:1311 a ns1:Museum ;
     ns1:City 13213.0 ;
     ns1:Localisation "Esplanade J4 - 7 promenade Robert Laffont"^^xsd:string ;
     ns1:department "Bouches-du-Rhône"^^xsd:string ;
@@ -2886,7 +2878,7 @@ ns1:1312 a ns1:Museum ;
     ns1:longitude "5.3610717693"^^xsd:float ;
     ns1:name "musée des civilisations de l'Europe et de la méditerranée"^^xsd:string .
 
-ns1:1313 a ns1:Museum ;
+ns1:1312 a ns1:Museum ;
     ns1:City 13100.0 ;
     ns1:Localisation "Place Saint-Jean-de-Malte"^^xsd:string ;
     ns1:department "Bouches-du-Rhône"^^xsd:string ;
@@ -2894,7 +2886,7 @@ ns1:1313 a ns1:Museum ;
     ns1:longitude "5.410889"^^xsd:float ;
     ns1:name "musée Granet"^^xsd:string .
 
-ns1:1314 a ns1:Museum ;
+ns1:1313 a ns1:Museum ;
     ns1:City 13100.0 ;
     ns1:Localisation "17 rue Gaston de Saporta"^^xsd:string ;
     ns1:department "Bouches-du-Rhône"^^xsd:string ;
@@ -2902,7 +2894,7 @@ ns1:1314 a ns1:Museum ;
     ns1:longitude "5.447432"^^xsd:float ;
     ns1:name "musée du vieil Aix"^^xsd:string .
 
-ns1:1315 a ns1:Museum ;
+ns1:1314 a ns1:Museum ;
     ns1:City 13001.0 ;
     ns1:Localisation "1 place Carli"^^xsd:string ;
     ns1:department "Bouches-du-Rhône"^^xsd:string ;
@@ -2910,7 +2902,7 @@ ns1:1315 a ns1:Museum ;
     ns1:longitude "5.383313"^^xsd:float ;
     ns1:name "cabinet des monnaies et médailles"^^xsd:string .
 
-ns1:1316 a ns1:Museum ;
+ns1:1315 a ns1:Museum ;
     ns1:City 13002.0 ;
     ns1:Localisation "2 rue de la Charité"^^xsd:string ;
     ns1:department "Bouches-du-Rhône"^^xsd:string ;
@@ -2918,7 +2910,7 @@ ns1:1316 a ns1:Museum ;
     ns1:longitude "5.367602"^^xsd:float ;
     ns1:name "musée des arts africains, océaniens, amérindiens"^^xsd:string .
 
-ns1:1317 a ns1:Museum ;
+ns1:1316 a ns1:Museum ;
     ns1:City 13760.0 ;
     ns1:Localisation "3 Avenue Pasteur"^^xsd:string ;
     ns1:department "Bouches-du-Rhône"^^xsd:string ;
@@ -2926,7 +2918,7 @@ ns1:1317 a ns1:Museum ;
     ns1:longitude "5.295178"^^xsd:float ;
     ns1:name "musée Suffren et du vieux Saint-Cannat"^^xsd:string .
 
-ns1:1318 a ns1:Museum ;
+ns1:1317 a ns1:Museum ;
     ns1:City 13250.0 ;
     ns1:Localisation "Saint-Chamas"^^xsd:string ;
     ns1:department "Bouches-du-Rhône"^^xsd:string ;
@@ -2934,13 +2926,21 @@ ns1:1318 a ns1:Museum ;
     ns1:longitude "5.072251"^^xsd:float ;
     ns1:name "musée du vieux Saint-Chamas"^^xsd:string .
 
-ns1:1319 a ns1:Museum ;
+ns1:1318 a ns1:Museum ;
     ns1:City 13400.0 ;
     ns1:Localisation "Route de la Thuillère"^^xsd:string ;
     ns1:department "Bouches-du-Rhône"^^xsd:string ;
     ns1:latitude "43.293538005"^^xsd:float ;
     ns1:longitude "5.5537686246"^^xsd:float ;
     ns1:name "musée de la Légion étrangère"^^xsd:string .
+
+ns1:1319 a ns1:Museum ;
+    ns1:City 5000.0 ;
+    ns1:Localisation "6 avenue Maréchal Foch"^^xsd:string ;
+    ns1:department "Hautes-Alpes"^^xsd:string ;
+    ns1:latitude "44.562625"^^xsd:float ;
+    ns1:longitude "6.085573"^^xsd:float ;
+    ns1:name "musée départemental des Hautes-Alpes"^^xsd:string .
 
 ns1:132 a ns1:TrainStation ;
     ns1:City 74500 ;
@@ -2953,14 +2953,6 @@ ns1:132 a ns1:TrainStation ;
     ns1:wifi "Non"^^xsd:string .
 
 ns1:1320 a ns1:Museum ;
-    ns1:City 5000.0 ;
-    ns1:Localisation "6 avenue Maréchal Foch"^^xsd:string ;
-    ns1:department "Hautes-Alpes"^^xsd:string ;
-    ns1:latitude "44.562625"^^xsd:float ;
-    ns1:longitude "6.085573"^^xsd:float ;
-    ns1:name "musée départemental des Hautes-Alpes"^^xsd:string .
-
-ns1:1321 a ns1:Museum ;
     ns1:City 5470.0 ;
     ns1:Localisation "S'adresser au musée départemental de Gap"^^xsd:string ;
     ns1:department "Hautes-Alpes"^^xsd:string ;
@@ -2968,7 +2960,7 @@ ns1:1321 a ns1:Museum ;
     ns1:longitude "6.0865776897"^^xsd:float ;
     ns1:name "musée du vieux Queyras"^^xsd:string .
 
-ns1:1322 a ns1:Museum ;
+ns1:1321 a ns1:Museum ;
     ns1:City 83400.0 ;
     ns1:Localisation "14 avenue Joseph Clotis"^^xsd:string ;
     ns1:department "Var"^^xsd:string ;
@@ -2976,7 +2968,7 @@ ns1:1322 a ns1:Museum ;
     ns1:longitude "6.130519"^^xsd:float ;
     ns1:name "musée municipal"^^xsd:string .
 
-ns1:1323 a ns1:Museum ;
+ns1:1322 a ns1:Museum ;
     ns1:City 83700.0 ;
     ns1:Localisation "Parvis de la vieille l'égise rue des templiers"^^xsd:string ;
     ns1:department "Var"^^xsd:string ;
@@ -2984,7 +2976,7 @@ ns1:1323 a ns1:Museum ;
     ns1:longitude "6.7698812148"^^xsd:float ;
     ns1:name "musée archéologique"^^xsd:string .
 
-ns1:1324 a ns1:Museum ;
+ns1:1323 a ns1:Museum ;
     ns1:City 83170.0 ;
     ns1:Localisation "Place des Comtes de Provence"^^xsd:string ;
     ns1:department "Var"^^xsd:string ;
@@ -2992,7 +2984,7 @@ ns1:1324 a ns1:Museum ;
     ns1:longitude "6.061427"^^xsd:float ;
     ns1:name "musée du pays brignolais"^^xsd:string .
 
-ns1:1325 a ns1:Museum ;
+ns1:1324 a ns1:Museum ;
     ns1:City 83600.0 ;
     ns1:Localisation "Place Calvini"^^xsd:string ;
     ns1:department "Var"^^xsd:string ;
@@ -3000,7 +2992,7 @@ ns1:1325 a ns1:Museum ;
     ns1:longitude "6.736721"^^xsd:float ;
     ns1:name "musée archéologique"^^xsd:string .
 
-ns1:1326 a ns1:Museum ;
+ns1:1325 a ns1:Museum ;
     ns1:City 83000.0 ;
     ns1:Localisation "Avenue du 11 mai 1945"^^xsd:string ;
     ns1:department "Var"^^xsd:string ;
@@ -3008,7 +3000,7 @@ ns1:1326 a ns1:Museum ;
     ns1:longitude "5.9319939999999995"^^xsd:float ;
     ns1:name "musée Jean Aicard"^^xsd:string .
 
-ns1:1327 a ns1:Museum ;
+ns1:1326 a ns1:Museum ;
     ns1:City 83608.0 ;
     ns1:Localisation "Avenue des Troupes de Marine"^^xsd:string ;
     ns1:department "Var"^^xsd:string ;
@@ -3016,7 +3008,7 @@ ns1:1327 a ns1:Museum ;
     ns1:longitude "6.7214021725"^^xsd:float ;
     ns1:name "musée des troupes de marine"^^xsd:string .
 
-ns1:1328 a ns1:Museum ;
+ns1:1327 a ns1:Museum ;
     ns1:City 83300.0 ;
     ns1:Localisation "9 rue de la République"^^xsd:string ;
     ns1:department "Var"^^xsd:string ;
@@ -3024,13 +3016,21 @@ ns1:1328 a ns1:Museum ;
     ns1:longitude "6.464818"^^xsd:float ;
     ns1:name "musée des Beaux-Arts"^^xsd:string .
 
-ns1:1329 a ns1:Museum ;
+ns1:1328 a ns1:Museum ;
     ns1:City 83990.0 ;
     ns1:Localisation "place Grammont"^^xsd:string ;
     ns1:department "Var"^^xsd:string ;
     ns1:latitude "43.270865"^^xsd:float ;
     ns1:longitude "6.637291"^^xsd:float ;
     ns1:name "musée de l'Annonciade"^^xsd:string .
+
+ns1:1329 a ns1:Museum ;
+    ns1:City 83000.0 ;
+    ns1:Localisation "113 boulevard du Maréchal Leclerc"^^xsd:string ;
+    ns1:department "Var"^^xsd:string ;
+    ns1:latitude "43.125971"^^xsd:float ;
+    ns1:longitude "5.927245"^^xsd:float ;
+    ns1:name "musée d'art de Toulon - M.A.T."^^xsd:string .
 
 ns1:133 a ns1:TrainStation ;
     ns1:City 74700 ;
@@ -3043,14 +3043,6 @@ ns1:133 a ns1:TrainStation ;
     ns1:wifi "Non"^^xsd:string .
 
 ns1:1330 a ns1:Museum ;
-    ns1:City 83000.0 ;
-    ns1:Localisation "113 boulevard du Maréchal Leclerc"^^xsd:string ;
-    ns1:department "Var"^^xsd:string ;
-    ns1:latitude "43.125971"^^xsd:float ;
-    ns1:longitude "5.927245"^^xsd:float ;
-    ns1:name "musée d'art de Toulon - M.A.T."^^xsd:string .
-
-ns1:1331 a ns1:Museum ;
     ns1:City 83600.0 ;
     ns1:Localisation "Place Calvini"^^xsd:string ;
     ns1:department "Var"^^xsd:string ;
@@ -3058,7 +3050,7 @@ ns1:1331 a ns1:Museum ;
     ns1:longitude "6.7364890135"^^xsd:float ;
     ns1:name "musée d'archéologie gallo-romaine du Var"^^xsd:string .
 
-ns1:1332 a ns1:Museum ;
+ns1:1331 a ns1:Museum ;
     ns1:City 83630.0 ;
     ns1:Localisation "rue Haute"^^xsd:string ;
     ns1:department "Var"^^xsd:string ;
@@ -3066,7 +3058,7 @@ ns1:1332 a ns1:Museum ;
     ns1:longitude "6.243581"^^xsd:float ;
     ns1:name "musée des tourneurs"^^xsd:string .
 
-ns1:1333 a ns1:Museum ;
+ns1:1332 a ns1:Museum ;
     ns1:City 83230.0 ;
     ns1:Localisation "103 rue Carnot"^^xsd:string ;
     ns1:department "Var"^^xsd:string ;
@@ -3074,7 +3066,7 @@ ns1:1333 a ns1:Museum ;
     ns1:longitude "6.340584"^^xsd:float ;
     ns1:name "musée des arts et d'histoire"^^xsd:string .
 
-ns1:1334 a ns1:Museum ;
+ns1:1333 a ns1:Museum ;
     ns1:City 83210.0 ;
     ns1:Localisation "3 rue Marseillaise"^^xsd:string ;
     ns1:department "Var"^^xsd:string ;
@@ -3082,7 +3074,7 @@ ns1:1334 a ns1:Museum ;
     ns1:longitude "6.039364"^^xsd:float ;
     ns1:name "musée Jean Aicard"^^xsd:string .
 
-ns1:1335 a ns1:Museum ;
+ns1:1334 a ns1:Museum ;
     ns1:City 83200.0 ;
     ns1:Localisation "737, chemin du Jonquet"^^xsd:string ;
     ns1:department "Var"^^xsd:string ;
@@ -3090,7 +3082,7 @@ ns1:1335 a ns1:Museum ;
     ns1:longitude "5.910861"^^xsd:float ;
     ns1:name "muséum d'histoire naturelle"^^xsd:string .
 
-ns1:1336 a ns1:Museum ;
+ns1:1335 a ns1:Museum ;
     ns1:City 83300.0 ;
     ns1:Localisation "Quartier Bonaparte avenue de La Grande Armée"^^xsd:string ;
     ns1:department "Var"^^xsd:string ;
@@ -3098,7 +3090,7 @@ ns1:1336 a ns1:Museum ;
     ns1:longitude "6.495058"^^xsd:float ;
     ns1:name "musée de l'artillerie"^^xsd:string .
 
-ns1:1337 a ns1:Museum ;
+ns1:1336 a ns1:Museum ;
     ns1:City 83300.0 ;
     ns1:Localisation "21 allée d'Azémar"^^xsd:string ;
     ns1:department "Var"^^xsd:string ;
@@ -3106,7 +3098,7 @@ ns1:1337 a ns1:Museum ;
     ns1:longitude "6.461588"^^xsd:float ;
     ns1:name "musée de la société d'études scientifiques et archéologiques"^^xsd:string .
 
-ns1:1338 a ns1:Museum ;
+ns1:1337 a ns1:Museum ;
     ns1:City 83300.0 ;
     ns1:Localisation "75 place georges brassens"^^xsd:string ;
     ns1:department "Var"^^xsd:string ;
@@ -3114,13 +3106,21 @@ ns1:1338 a ns1:Museum ;
     ns1:longitude "6.463862"^^xsd:float ;
     ns1:name "musée des arts et traditions populaires de moyenne Provence"^^xsd:string .
 
-ns1:1339 a ns1:Museum ;
+ns1:1338 a ns1:Museum ;
     ns1:City 84300.0 ;
     ns1:Localisation "20 rue Chabran"^^xsd:string ;
     ns1:department "Vaucluse"^^xsd:string ;
     ns1:latitude "43.837324"^^xsd:float ;
     ns1:longitude "5.038776"^^xsd:float ;
     ns1:name "musée Jouve"^^xsd:string .
+
+ns1:1339 a ns1:Museum ;
+    ns1:City 84100.0 ;
+    ns1:Localisation "rue Madeleine Roch"^^xsd:string ;
+    ns1:department "Vaucluse"^^xsd:string ;
+    ns1:latitude "44.135887"^^xsd:float ;
+    ns1:longitude "4.807526"^^xsd:float ;
+    ns1:name "musée municipal"^^xsd:string .
 
 ns1:134 a ns1:TrainStation ;
     ns1:City 74200 ;
@@ -3133,14 +3133,6 @@ ns1:134 a ns1:TrainStation ;
     ns1:wifi "Non"^^xsd:string .
 
 ns1:1340 a ns1:Museum ;
-    ns1:City 84100.0 ;
-    ns1:Localisation "rue Madeleine Roch"^^xsd:string ;
-    ns1:department "Vaucluse"^^xsd:string ;
-    ns1:latitude "44.135887"^^xsd:float ;
-    ns1:longitude "4.807526"^^xsd:float ;
-    ns1:name "musée municipal"^^xsd:string .
-
-ns1:1341 a ns1:Museum ;
     ns1:City 84390.0 ;
     ns1:Localisation "None"^^xsd:string ;
     ns1:department "Vaucluse"^^xsd:string ;
@@ -3148,7 +3140,7 @@ ns1:1341 a ns1:Museum ;
     ns1:longitude "5.408027"^^xsd:float ;
     ns1:name "musée municipal"^^xsd:string .
 
-ns1:1342 a ns1:Museum ;
+ns1:1341 a ns1:Museum ;
     ns1:City 84110.0 ;
     ns1:Localisation "Place du chanoine Sautel"^^xsd:string ;
     ns1:department "Vaucluse"^^xsd:string ;
@@ -3156,7 +3148,7 @@ ns1:1342 a ns1:Museum ;
     ns1:longitude "5.072128"^^xsd:float ;
     ns1:name "musée archéologique Théo Desplans"^^xsd:string .
 
-ns1:1343 a ns1:Museum ;
+ns1:1342 a ns1:Museum ;
     ns1:City 84600.0 ;
     ns1:Localisation "3 avenue du Maréchal Foch"^^xsd:string ;
     ns1:department "Vaucluse"^^xsd:string ;
@@ -3164,7 +3156,7 @@ ns1:1343 a ns1:Museum ;
     ns1:longitude "4.987351"^^xsd:float ;
     ns1:name "musée du cartonnage et de l'imprimerie"^^xsd:string .
 
-ns1:1344 a ns1:Museum ;
+ns1:1343 a ns1:Museum ;
     ns1:City 84300.0 ;
     ns1:Localisation "Place Jean Bastide"^^xsd:string ;
     ns1:department "Vaucluse"^^xsd:string ;
@@ -3172,7 +3164,7 @@ ns1:1344 a ns1:Museum ;
     ns1:longitude "5.037862"^^xsd:float ;
     ns1:name "musée de l'hôtel-Dieu"^^xsd:string .
 
-ns1:1345 a ns1:Museum ;
+ns1:1344 a ns1:Museum ;
     ns1:City 84160.0 ;
     ns1:Localisation "rue de l'Eglise"^^xsd:string ;
     ns1:department "Vaucluse"^^xsd:string ;
@@ -3180,7 +3172,7 @@ ns1:1345 a ns1:Museum ;
     ns1:longitude "5.440606"^^xsd:float ;
     ns1:name "musée Marc Deydier"^^xsd:string .
 
-ns1:1346 a ns1:Museum ;
+ns1:1345 a ns1:Museum ;
     ns1:City 84000.0 ;
     ns1:Localisation "67 rue Joseph Vernet"^^xsd:string ;
     ns1:department "Vaucluse"^^xsd:string ;
@@ -3188,7 +3180,7 @@ ns1:1346 a ns1:Museum ;
     ns1:longitude "4.803397"^^xsd:float ;
     ns1:name "muséum d'histoire naturelle Esprit Requien"^^xsd:string .
 
-ns1:1347 a ns1:Museum ;
+ns1:1346 a ns1:Museum ;
     ns1:City 84000.0 ;
     ns1:Localisation "65 rue Joseph Vernet"^^xsd:string ;
     ns1:department "Vaucluse"^^xsd:string ;
@@ -3196,7 +3188,7 @@ ns1:1347 a ns1:Museum ;
     ns1:longitude "4.803388"^^xsd:float ;
     ns1:name "musée Calvet (et musée lapidaire)"^^xsd:string .
 
-ns1:1348 a ns1:Museum ;
+ns1:1347 a ns1:Museum ;
     ns1:City 84200.0 ;
     ns1:Localisation "234 Boulevard Albert Durand"^^xsd:string ;
     ns1:department "Vaucluse"^^xsd:string ;
@@ -3204,13 +3196,21 @@ ns1:1348 a ns1:Museum ;
     ns1:longitude "5.045479"^^xsd:float ;
     ns1:name "musées Comtadin et Duplessis"^^xsd:string .
 
-ns1:1349 a ns1:Museum ;
+ns1:1348 a ns1:Museum ;
     ns1:City 84800.0 ;
     ns1:Localisation "Rive gauche de la Sorgue"^^xsd:string ;
     ns1:department "Vaucluse"^^xsd:string ;
     ns1:latitude "43.91753"^^xsd:float ;
     ns1:longitude "5.056541"^^xsd:float ;
     ns1:name "musée-bibliothèque Pétrarque"^^xsd:string .
+
+ns1:1349 a ns1:Museum ;
+    ns1:City 84400.0 ;
+    ns1:Localisation "14 place du Postel"^^xsd:string ;
+    ns1:department "Vaucluse"^^xsd:string ;
+    ns1:latitude "43.875736"^^xsd:float ;
+    ns1:longitude "5.397687"^^xsd:float ;
+    ns1:name "musée municipal d'archéologie"^^xsd:string .
 
 ns1:135 a ns1:TrainStation ;
     ns1:City 75010 ;
@@ -3223,14 +3223,6 @@ ns1:135 a ns1:TrainStation ;
     ns1:wifi "Oui"^^xsd:string .
 
 ns1:1350 a ns1:Museum ;
-    ns1:City 84400.0 ;
-    ns1:Localisation "14 place du Postel"^^xsd:string ;
-    ns1:department "Vaucluse"^^xsd:string ;
-    ns1:latitude "43.875736"^^xsd:float ;
-    ns1:longitude "5.397687"^^xsd:float ;
-    ns1:name "musée municipal d'archéologie"^^xsd:string .
-
-ns1:1351 a ns1:Museum ;
     ns1:City 84200.0 ;
     ns1:Localisation "Rue des Saintes-Maries"^^xsd:string ;
     ns1:department "Vaucluse"^^xsd:string ;
@@ -3238,7 +3230,7 @@ ns1:1351 a ns1:Museum ;
     ns1:longitude "5.046763"^^xsd:float ;
     ns1:name "musée lapidaire et archéologie"^^xsd:string .
 
-ns1:1352 a ns1:Museum ;
+ns1:1351 a ns1:Museum ;
     ns1:City 84200.0 ;
     ns1:Localisation "112 rue du Collège"^^xsd:string ;
     ns1:department "Vaucluse"^^xsd:string ;
@@ -3246,7 +3238,7 @@ ns1:1352 a ns1:Museum ;
     ns1:longitude "5.046269"^^xsd:float ;
     ns1:name "musée Sobirats"^^xsd:string .
 
-ns1:1353 a ns1:Museum ;
+ns1:1352 a ns1:Museum ;
     ns1:City 84300.0 ;
     ns1:Localisation "Rue Hébraïque"^^xsd:string ;
     ns1:department "Vaucluse"^^xsd:string ;
@@ -3254,7 +3246,7 @@ ns1:1353 a ns1:Museum ;
     ns1:longitude "5.038553"^^xsd:float ;
     ns1:name "synagogue musée juif comtadin"^^xsd:string .
 
-ns1:1354 a ns1:Museum ;
+ns1:1353 a ns1:Museum ;
     ns1:City 84380.0 ;
     ns1:Localisation "rue Saint-Nazaire"^^xsd:string ;
     ns1:department "Vaucluse"^^xsd:string ;
@@ -3262,7 +3254,7 @@ ns1:1354 a ns1:Museum ;
     ns1:longitude "5.12788"^^xsd:float ;
     ns1:name "musée municipal"^^xsd:string .
 
-ns1:1355 a ns1:Museum ;
+ns1:1354 a ns1:Museum ;
     ns1:City 84000.0 ;
     ns1:Localisation "Place du Palais des Papes"^^xsd:string ;
     ns1:department "Vaucluse"^^xsd:string ;
@@ -3270,7 +3262,7 @@ ns1:1355 a ns1:Museum ;
     ns1:longitude "4.806317"^^xsd:float ;
     ns1:name "musée du Petit Palais"^^xsd:string .
 
-ns1:1356 a ns1:Museum ;
+ns1:1355 a ns1:Museum ;
     ns1:City 84160.0 ;
     ns1:Localisation "S'adresser à la mairie"^^xsd:string ;
     ns1:department "Vaucluse"^^xsd:string ;
@@ -3278,7 +3270,7 @@ ns1:1356 a ns1:Museum ;
     ns1:longitude "5.3636267093"^^xsd:float ;
     ns1:name "musée Philippe de Girard"^^xsd:string .
 
-ns1:1357 a ns1:Museum ;
+ns1:1356 a ns1:Museum ;
     ns1:City 84800.0 ;
     ns1:Localisation "Chemin du gouffre"^^xsd:string ;
     ns1:department "Vaucluse"^^xsd:string ;
@@ -3286,7 +3278,7 @@ ns1:1357 a ns1:Museum ;
     ns1:longitude "5.127397"^^xsd:float ;
     ns1:name "musée Jean Garcin 39-45 : l'appel de la liberté"^^xsd:string .
 
-ns1:1358 a ns1:Museum ;
+ns1:1357 a ns1:Museum ;
     ns1:City 97110.0 ;
     ns1:Localisation "24 rue Peynier"^^xsd:string ;
     ns1:department "Guadeloupe"^^xsd:string ;
@@ -3294,13 +3286,21 @@ ns1:1358 a ns1:Museum ;
     ns1:longitude "-61.537737"^^xsd:float ;
     ns1:name "musée Schoelcher"^^xsd:string .
 
-ns1:1359 a ns1:Museum ;
+ns1:1358 a ns1:Museum ;
     ns1:City 97110.0 ;
     ns1:Localisation "9 rue de Nozières"^^xsd:string ;
     ns1:department "Guadeloupe"^^xsd:string ;
     ns1:latitude "16.236416"^^xsd:float ;
     ns1:longitude "-61.535945"^^xsd:float ;
     ns1:name "musée Saint-John-Perse"^^xsd:string .
+
+ns1:1359 a ns1:Museum ;
+    ns1:City 97163.0 ;
+    ns1:Localisation "s'adresser à l'office du tourisme"^^xsd:string ;
+    ns1:department "Guadeloupe"^^xsd:string ;
+    ns1:latitude "16.2385073028"^^xsd:float ;
+    ns1:longitude "-61.5367270814"^^xsd:float ;
+    ns1:name "musée l'Herminier"^^xsd:string .
 
 ns1:136 a ns1:TrainStation ;
     ns1:City 75015 ;
@@ -3313,14 +3313,6 @@ ns1:136 a ns1:TrainStation ;
     ns1:wifi "Oui"^^xsd:string .
 
 ns1:1360 a ns1:Museum ;
-    ns1:City 97163.0 ;
-    ns1:Localisation "s'adresser à l'office du tourisme"^^xsd:string ;
-    ns1:department "Guadeloupe"^^xsd:string ;
-    ns1:latitude "16.2385073028"^^xsd:float ;
-    ns1:longitude "-61.5367270814"^^xsd:float ;
-    ns1:name "musée l'Herminier"^^xsd:string .
-
-ns1:1361 a ns1:Museum ;
     ns1:City 97136.0 ;
     ns1:Localisation "None"^^xsd:string ;
     ns1:department "Guadeloupe"^^xsd:string ;
@@ -3328,7 +3320,7 @@ ns1:1361 a ns1:Museum ;
     ns1:longitude "-61.646677"^^xsd:float ;
     ns1:name "musée précolombien Edgar Clerc"^^xsd:string .
 
-ns1:1362 a ns1:Museum ;
+ns1:1361 a ns1:Museum ;
     ns1:City 97112.0 ;
     ns1:Localisation "Section Murat"^^xsd:string ;
     ns1:department "Guadeloupe"^^xsd:string ;
@@ -3336,7 +3328,7 @@ ns1:1362 a ns1:Museum ;
     ns1:longitude "-61.298004"^^xsd:float ;
     ns1:name "écomusée de Marie-Galante"^^xsd:string .
 
-ns1:1363 a ns1:Museum ;
+ns1:1362 a ns1:Museum ;
     ns1:City 97300.0 ;
     ns1:Localisation "1 Avenue du Général-de-Gaulle"^^xsd:string ;
     ns1:department "Guyane"^^xsd:string ;
@@ -3344,7 +3336,7 @@ ns1:1363 a ns1:Museum ;
     ns1:longitude "-52.334359"^^xsd:float ;
     ns1:name "musée départemental Alexandre Franconie"^^xsd:string .
 
-ns1:1364 a ns1:Museum ;
+ns1:1363 a ns1:Museum ;
     ns1:City 97300.0 ;
     ns1:Localisation "78 rue Madame Payé"^^xsd:string ;
     ns1:department "Guyane"^^xsd:string ;
@@ -3352,7 +3344,7 @@ ns1:1364 a ns1:Museum ;
     ns1:longitude "-52.32837"^^xsd:float ;
     ns1:name "musée des arts et traditions populaires de la Guyane"^^xsd:string .
 
-ns1:1365 a ns1:Museum ;
+ns1:1364 a ns1:Museum ;
     ns1:City 97338.0 ;
     ns1:Localisation "None"^^xsd:string ;
     ns1:department "Guyane"^^xsd:string ;
@@ -3360,7 +3352,7 @@ ns1:1365 a ns1:Museum ;
     ns1:longitude "-52.6504341722"^^xsd:float ;
     ns1:name "écomusée de l'Approuague"^^xsd:string .
 
-ns1:1366 a ns1:Museum ;
+ns1:1365 a ns1:Museum ;
     ns1:City 97450.0 ;
     ns1:Localisation "17 A, chemin Maison Rouge"^^xsd:string ;
     ns1:department "La Réunion"^^xsd:string ;
@@ -3368,7 +3360,7 @@ ns1:1366 a ns1:Museum ;
     ns1:longitude "55.411839"^^xsd:float ;
     ns1:name "musée des arts décoratifs de l'Océan indien"^^xsd:string .
 
-ns1:1367 a ns1:Museum ;
+ns1:1366 a ns1:Museum ;
     ns1:City 97435.0 ;
     ns1:Localisation "Domaine de Panon-Desbassayns"^^xsd:string ;
     ns1:department "La Réunion"^^xsd:string ;
@@ -3376,7 +3368,7 @@ ns1:1367 a ns1:Museum ;
     ns1:longitude "55.2644093857"^^xsd:float ;
     ns1:name "musée de Villèle"^^xsd:string .
 
-ns1:1368 a ns1:Museum ;
+ns1:1367 a ns1:Museum ;
     ns1:City 97400.0 ;
     ns1:Localisation "1 rue Poivre"^^xsd:string ;
     ns1:department "La Réunion"^^xsd:string ;
@@ -3384,13 +3376,21 @@ ns1:1368 a ns1:Museum ;
     ns1:longitude "55.451452"^^xsd:float ;
     ns1:name "muséum d'histoire naturelle"^^xsd:string .
 
-ns1:1369 a ns1:Museum ;
+ns1:1368 a ns1:Museum ;
     ns1:City 97424.0 ;
     ns1:Localisation "10 allée des flamboyants"^^xsd:string ;
     ns1:department "La Réunion"^^xsd:string ;
     ns1:latitude "-21.201257"^^xsd:float ;
     ns1:longitude "55.296082"^^xsd:float ;
     ns1:name "musée agricole et industriel Stella Matutina"^^xsd:string .
+
+ns1:1369 a ns1:Museum ;
+    ns1:City 97400.0 ;
+    ns1:Localisation "28 rue de Paris"^^xsd:string ;
+    ns1:department "La Réunion"^^xsd:string ;
+    ns1:latitude "-20.883698"^^xsd:float ;
+    ns1:longitude "55.450251"^^xsd:float ;
+    ns1:name "musée Léon Dierx"^^xsd:string .
 
 ns1:137 a ns1:TrainStation ;
     ns1:City 75010 ;
@@ -3403,14 +3403,6 @@ ns1:137 a ns1:TrainStation ;
     ns1:wifi "Oui"^^xsd:string .
 
 ns1:1370 a ns1:Museum ;
-    ns1:City 97400.0 ;
-    ns1:Localisation "28 rue de Paris"^^xsd:string ;
-    ns1:department "La Réunion"^^xsd:string ;
-    ns1:latitude "-20.883698"^^xsd:float ;
-    ns1:longitude "55.450251"^^xsd:float ;
-    ns1:name "musée Léon Dierx"^^xsd:string .
-
-ns1:1371 a ns1:Museum ;
     ns1:City 97229.0 ;
     ns1:Localisation "Quartier Vatable"^^xsd:string ;
     ns1:department "Martinique"^^xsd:string ;
@@ -3418,7 +3410,7 @@ ns1:1371 a ns1:Museum ;
     ns1:longitude "-61.026775"^^xsd:float ;
     ns1:name "maison de la canne"^^xsd:string .
 
-ns1:1372 a ns1:Museum ;
+ns1:1371 a ns1:Museum ;
     ns1:City 97200.0 ;
     ns1:Localisation "9 rue de La Liberté"^^xsd:string ;
     ns1:department "Martinique"^^xsd:string ;
@@ -3426,7 +3418,7 @@ ns1:1372 a ns1:Museum ;
     ns1:longitude "-61.068675"^^xsd:float ;
     ns1:name "musée départemental d'archéologie"^^xsd:string .
 
-ns1:1373 a ns1:Museum ;
+ns1:1372 a ns1:Museum ;
     ns1:City 97200.0 ;
     ns1:Localisation "10 boulevard du Général de Gaulle"^^xsd:string ;
     ns1:department "Martinique"^^xsd:string ;
@@ -3434,7 +3426,7 @@ ns1:1373 a ns1:Museum ;
     ns1:longitude "-61.065619"^^xsd:float ;
     ns1:name "musée régional d'histoire et d'ethnologie"^^xsd:string .
 
-ns1:1374 a ns1:Museum ;
+ns1:1373 a ns1:Museum ;
     ns1:City 97250.0 ;
     ns1:Localisation "169 rue Victor-Hugo"^^xsd:string ;
     ns1:department "Martinique"^^xsd:string ;
@@ -3442,7 +3434,7 @@ ns1:1374 a ns1:Museum ;
     ns1:longitude "-61.175994"^^xsd:float ;
     ns1:name "musée vulcanologique"^^xsd:string .
 
-ns1:1375 a ns1:Museum ;
+ns1:1374 a ns1:Museum ;
     ns1:City 97211.0 ;
     ns1:Localisation "quai Anse-du-figuier"^^xsd:string ;
     ns1:department "Martinique"^^xsd:string ;
@@ -3450,7 +3442,7 @@ ns1:1375 a ns1:Museum ;
     ns1:longitude "-60.909569"^^xsd:float ;
     ns1:name "écomusée de la Martinique"^^xsd:string .
 
-ns1:1376 a ns1:Museum ;
+ns1:1375 a ns1:Museum ;
     ns1:City 97200.0 ;
     ns1:Localisation "Parc Floral"^^xsd:string ;
     ns1:department "Martinique"^^xsd:string ;
@@ -3458,7 +3450,7 @@ ns1:1376 a ns1:Museum ;
     ns1:longitude "-61.049824"^^xsd:float ;
     ns1:name "muséum d'histoire naturelle"^^xsd:string .
 
-ns1:1377 a ns1:Museum ;
+ns1:1376 a ns1:Museum ;
     ns1:City 97200.0 ;
     ns1:Localisation "None"^^xsd:string ;
     ns1:department "Martinique"^^xsd:string ;
@@ -3466,7 +3458,7 @@ ns1:1377 a ns1:Museum ;
     ns1:longitude "-61.070648"^^xsd:float ;
     ns1:name "musée du Père Pinchon"^^xsd:string .
 
-ns1:1378 a ns1:Museum ;
+ns1:1377 a ns1:Museum ;
     ns1:City 97615.0 ;
     ns1:Localisation "None"^^xsd:string ;
     ns1:department "Mayotte"^^xsd:string ;
@@ -3474,7 +3466,7 @@ ns1:1378 a ns1:Museum ;
     ns1:longitude "45.282721"^^xsd:float ;
     ns1:name "MuMa - musée de Mayotte"^^xsd:string .
 
-ns1:1379 a ns1:Museum ;
+ns1:1378 a ns1:Museum ;
     ns1:City 97500.0 ;
     ns1:Localisation "rue du 11 novembre"^^xsd:string ;
     ns1:department "Saint-Pierre-et-Miquelon"^^xsd:string ;

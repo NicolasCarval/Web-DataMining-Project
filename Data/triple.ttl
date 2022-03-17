@@ -1,5 +1,5 @@
 @base <http://exemple.org> .
-@prefix ns1: <http://www.semanticweb.org/sébastien/ontologies/2022/2/untitled-ontology-22#> .
+@prefix ns1: <http://www.semanticweb.org/sebastien/ontologies/2022/2/untitled-ontology-22#> .
 @prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
 @prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
 

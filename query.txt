@@ -1,0 +1,90 @@
+PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
+PREFIX rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>
+PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>
+PREFIX ns1: <http://www.semanticweb.org/sébastien/ontologies/2022/2/untitled-ontology-22#> 
+
+
+#List the instances of the geolocated POI
+
+SELECT distinct ?name ?longitude ?latitude
+WHERE {​​​​​​
+?x rdf:type ?type.
+?type rdfs:subClassOf* ns1:Place.
+?x ns1:name ?name.
+?x ns1:longitude ?longitude.
+?x ns1:latitude ?latitude.
+}​​​​​​
+
+#List the name of all train station. For each one, display its city.
+
+SELECT distinct ?name ?cityWHERE {​​​​​​
+?trainStation rdf:type ns1:TrainStation.
+?trainStation ns1:name ?name.
+?trainStation ns1:City ?city.
+}​​​​​​
+
+
+#List the name of trips that have Paris (or any other chosen city) as destination.
+
+#List the name of train station with wifi.
+
+SELECT ?name
+WHERE
+{​​​
+?s rdf:type ns1:TrainStation .
+?s ns1:wifi ?x.
+?s ns1:name ?name
+FILTER ( ?x="Non")
+}​​​
+
+
+#2 Optional Graph Patterns query 
+
+SELECT ?name ?lon ?lat ?name ?nbu ?wifi
+WHERE
+{​​​
+?s rdf:type ?type.
+?type rdfs:subClassOf* ns1:Place.
+?s ns1:longitude ?lon.
+?s ns1:latitude ?lat.
+?s ns1:City ?city.
+?s ns1:name ?name.
+OPTIONAL {​​​?s ns1:numberOfUsers ?nbu. }​​​.
+OPTIONAL {​​​?s ns1:wifi ?wifi .}​​​.
+}​​​
+
+#A query that contains at least 2 alternatives and conjunctions
+
+SELECT ?name ?latitude ?longitude
+WHERE{
+  { ?x rdf:type ?type.
+  ?type rdfs:subClassOf* ns1:Place.
+  ?x ns1:name ?name.
+  ?x ns1:longitude ?longitude.
+  ?x ns1:latitude ?latitude. }
+UNION{
+  ?x ns1:wifi "Oui".
+  ?x ns1:numberOfUsers "medium" . }
+}
+
+#A query that contains a CONSTRUCT query form
+
+CONSTRUCT {​​​
+?x ?p ?o.
+}​​​
+WHERE {​​​
+?x rdf:type ?type.
+?type rdfs:subClassOf* ns1:Place.
+?x ?p ?o.
+}​​​
+
+#A query that contains an ASK query form
+
+ASK{
+	?s rdf:type ns1:TrainStation .
+  	?s ns1:City 75012.
+}
+
+A query that contains a DESCRIBE query for
+DESCRIBE ?place
+WHERE {​​​ ?place a ns1:TrainStation ;}​​​

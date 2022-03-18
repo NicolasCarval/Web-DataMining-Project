@@ -4,8 +4,13 @@ var lon = 2.3522219;
 //Initialization of the map;
 var map = L.map('map')
 
+//When loading the page we want to be on paris (map focus, weather info ...) 
 initialisation();
 
+function initialisation() {
+    document.getElementById("city-select").selectedIndex = 0;
+    cityChange();
+}
 //Change position on the map
 function displayMap(latitude, longitude) {
     map.setView([latitude, longitude], 13);
@@ -103,8 +108,8 @@ function weather(latitude, longitude) {
         return response.text();
         
     }).then(function (text) {
-        let outcome = JSON.parse(text);
-        return outcome;
+        let answer = JSON.parse(text);
+        return answer;
     }).catch(function (error) {
         console.log(error);
     });
@@ -126,18 +131,15 @@ function getCoordCity(city) {
     return fetch(url).then(function (response) {
         return response.text();
     }).then(function (text) {
-        let outcome = JSON.parse(text);
-        console.log(outcome)
-        return outcome.features[0].geometry.coordinates;
+        let answer = JSON.parse(text);
+        console.log(answer)
+        return answer.features[0].geometry.coordinates;
     }).catch(function (error) {
         console.log(error);
     });
 }
 
-function initialisation() {
-    document.getElementById("city-select").selectedIndex = 0;
-    cityChange();
-}
+
 function cityChange() {
     let city = document.getElementById("city-select").value
     getCoordCity(city).then(newCoordinates => {

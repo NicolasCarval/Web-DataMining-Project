@@ -52,7 +52,7 @@ PREFIX ns1: <http://www.semanticweb.org/sebastien/ontologies/2022/2/untitled-ont
 
 
 
-SELECT distinct ?name ?longitude ?latitude
+SELECT distinct ?name ?longitude ?latitude ?type
 WHERE {
 ?x rdf:type ?type.
 ?type rdfs:subClassOf* ns1:Place.
@@ -60,7 +60,7 @@ WHERE {
 ?x ns1:longitude ?longitude.
 ?x ns1:latitude ?latitude.
 }`);
-	var queryUrl = `http://localhost:3030/semantic/query?query=`+ query+"&format=json"
+	var queryUrl = `http://localhost:3030/triple/query?query=`+ query+"&format=json"
 	var finalValue= await fetch(queryUrl)
 	.then(function (response) {
 		return response.text();})
@@ -68,15 +68,16 @@ WHERE {
 		let outcome = JSON.parse(text);
 		console.log(outcome)
 		outcome.results.bindings.forEach(x => {
-		if (x.name.value.includes("musée"))
+		console.log(x.type.value)
+		if (x.type.value.includes("Museum"))
 		{
 			var marker = L.marker([x.latitude.value,x.longitude.value], {icon: greenIcon})
-			marker.bindPopup(x.name.value).addTo(map) ;
+			marker.bindPopup("\nnmusée: \n"+x.name.value).addTo(map) ;
 		}
 		else{
 			console.log("passe")
 			var marker = L.marker([x.latitude.value,x.longitude.value], {icon: blueIcon})
-			marker.bindPopup(x.name.value).addTo(map) ;
+			marker.bindPopup("Gare: \n"+x.name.value).addTo(map) ;
 		}
 		
 		}

@@ -88,3 +88,46 @@ ASK{
 A query that contains a DESCRIBE query for
 DESCRIBE ?place
 WHERE {​​​ ?place a ns1:TrainStation ;}​​​
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+PREFIX dc: <http://purl.org/dc/elements/1.1/>
+PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
+PREFIX rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>
+PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>
+PREFIX ns1: <http://www.semanticweb.org/sebastien/ontologies/2022/2/untitled-ontology-22#> 
+
+SELECT distinct ?name ?longitude ?latitude ?type
+WHERE {
+?x rdf:type ?type.
+?type rdfs:subClassOf* ns1:Place.
+?x ns1:name ?name.
+?x ns1:longitude ?longitude.
+?x ns1:latitude ?latitude.
+  
+  FILTER (
+    !EXISTS {
+      ?x ns1:wifi 'Non'
+    }
+  )
+}

@@ -1,4 +1,4 @@
-<html>
+﻿<html>
   <head>
     <meta charset="UTF-8"/>
     <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
@@ -8,12 +8,51 @@
 
     <link rel="stylesheet" href="https://unpkg.com/leaflet@1.7.1/dist/leaflet.css" integrity="sha512-xodZBNTC5n17Xt2atTPuE1HxjVMSvLVW9ocqUKLsCC5CXdbqCmblAshOMAS6/keqq/sMZMZ19scR4PsZChSR7A=="crossorigin=""/>
     <script src="https://unpkg.com/leaflet@1.7.1/dist/leaflet.js" integrity="sha512-XQoYMqMTK8LvdxXYG3nZ448hOEQiglfqkJs1NOQV44cWnUrBc8PkAOcXy20w0vlaXaVUearIOBhiXZ5V3ynxwA==" crossorigin=""></script>
-
-
+    
   </head>
   <body>
-    <div id="map"></div>
-	<script src="index.js"></script>
-  </body>
-  
+      <div class="header">
+          <h1>Web-Datamining & Semantics Project</h1>          
+      </div>
+      <div class="row">
+          <div class="columnleft">
+              <div>
+                  <h2>Weather Info :</h2>
+                  <div>
+                      <p id="weatherCity">In : ...</p>
+                      <span id="weatherDegree">temperature : ... °C</span><br />
+                      <span id="weatherSky">sky : ...</span><br />
+                      <span id="weatherWind">wind : ...</span><br />
+                  </div>
+                  <hr class="solid" />
+                  <h2>Filters :</h2>
+                  <div>
+                      <label for="city-select">Choose a city:</label>
+                      <select name="city" id="city-select" onchange="cityChange()">
+                          <option value="Paris">--Paris--</option>
+                          <option value="Lyon">Lyon</option>
+                      </select><br />
+
+                      <input type="checkbox" id="trafficLow" name="trafficLow" value="true">
+                      <label for="trafficLow"> Low</label><br>
+                      <input type="checkbox" id="trafficMedium" name="trafficMedium" value="true">
+                      <label for="trafficMedium"> Medium</label><br>
+                      <input type="checkbox" id="trafficHigh" name="trafficHigh" value="true">
+                      <label for="trafficHigh"> High</label><br>
+
+                      <input type="checkbox" id="wifiOnly" name="wifiOnly" value="true">
+                      <label for="wifiOnly"> wify only</label><br>
+                  </div>
+              </div>
+
+          </div>
+          <div class="columnright">
+              <div id="map">MAP</div>
+          </div>
+      </div>      
+      <div class="footer">
+          <em>Sébastien BUQUET</em> - <em>Nicolas CARVAL</em> - <em>Bruno PINCET</em>
+      </div>      
+  </body>  
+  <script src="index.js"></script>
 </html>

@@ -2,10 +2,18 @@
 var lat = 48.856614;
 var lon = 2.3522219;
 //Initialization of the map;
-var map = L.map('map').setView([lat, lon], 6);;
+var map = L.map('map')
+
+initialisation();
+
+//Change position on the map
+function displayMap(latitude, longitude) {
+    map.setView([latitude, longitude], 13);
+}
+map.setView([lat, lon], 12);
 L.tileLayer(`https://api.mapbox.com/styles/v1/{id}/tiles/{z}/{x}/{y}?access_token={accessToken}`, {
     attribution: 'Map data &copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a> contributors, Imagery © <a href="https://www.mapbox.com/">Mapbox</a>',
-    maxZoom: 12,
+    maxZoom: 11,
     id: 'mapbox/streets-v11',
     tileSize: 512,
     zoomOffset: -1,
@@ -47,7 +55,7 @@ WHERE {
 ?x ns1:longitude ?longitude.
 ?x ns1:latitude ?latitude.
 }`);
-	var queryUrl = `http://localhost:3030/triple/query?query=`+ query+"&format=json"
+	var queryUrl = `http://localhost:3030/semantic/query?query=`+ query+"&format=json"
 	var finalValue= await fetch(queryUrl)
 	.then(function (response) {
 		return response.text();})
@@ -85,4 +93,59 @@ async function onMapClick(e) {
 }
 
 map.on('click', onMapClick);
+
+
+
+//WEATHER
+function weather(latitude, longitude) {
+    var url = `http://api.openweathermap.org/data/2.5/weather?lat=${latitude}&lon=${longitude}&appid=ce8847370586f5876e9c7186b725a50c&units=metric`
+    return fetch(url).then(function (response) {
+        return response.text();
+        
+    }).then(function (text) {
+        let outcome = JSON.parse(text);
+        return outcome;
+    }).catch(function (error) {
+        console.log(error);
+    });
+}
+
+function displayWeather() {
+    weather(lat, lon).then(function (json) {
+        let city = document.getElementById("city-select").value
+        document.getElementById("weatherCity").innerText = `In : ${city}`;
+        document.getElementById("weatherDegree").innerText = `Temperature : ${json.main.temp}°C`;
+        document.getElementById("weatherSky").innerText = `Sky : ${json.weather[0].main}`;
+        document.getElementById("weatherWind").innerText = `Wind : ${json.wind.speed} Km/h, orientation : ${json.wind.deg}°`;
+    });    
+}
+
+function getCoordCity(city) {
+    var url = `https://api-adresse.data.gouv.fr/search/?q=${city}`
+    console.log(url)
+    return fetch(url).then(function (response) {
+        return response.text();
+    }).then(function (text) {
+        let outcome = JSON.parse(text);
+        console.log(outcome)
+        return outcome.features[0].geometry.coordinates;
+    }).catch(function (error) {
+        console.log(error);
+    });
+}
+
+function initialisation() {
+    document.getElementById("city-select").selectedIndex = 0;
+    cityChange();
+}
+function cityChange() {
+    let city = document.getElementById("city-select").value
+    getCoordCity(city).then(newCoordinates => {
+        lon = newCoordinates[0]
+        lat = newCoordinates[1]
+        console.log(lon, lat)
+        displayMap(lat, lon)
+    }).then(displayWeather())
+
+}
 

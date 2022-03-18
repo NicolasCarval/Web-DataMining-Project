@@ -32,7 +32,21 @@ const test =async function()
 	  shadowSize: [41, 41]
 	});
 	
-	var query =encodeURIComponent(`PREFIX rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#> PREFIX ns1: <http://www.semanticweb.org/sebastien/ontologies/2022/2/untitled-ontology-22#> PREFIX xsd: <http://www.w3.org/2001/XMLSchema#> SELECT ?name ?lon ?lat ?name ?nbu ?wifi WHERE {?s rdf:type ?type. ?type rdfs:subClassOf* ns1:Place. ?s ns1:longitude ?lon. ?s ns1:latitude ?lat. ?s ns1:City ?city. ?s ns1:name ?name. OPTIONAL {?s ns1:numberOfUsers ?nbu. }. OPTIONAL {?s ns1:wifi ?wifi .}.}`);
+	var query =encodeURIComponent(`PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
+PREFIX rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>
+PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>
+PREFIX ns1: <http://www.semanticweb.org/sebastien/ontologies/2022/2/untitled-ontology-22#> 
+
+
+
+SELECT distinct ?name ?longitude ?latitude
+WHERE {
+?x rdf:type ?type.
+?type rdfs:subClassOf* ns1:Place.
+?x ns1:name ?name.
+?x ns1:longitude ?longitude.
+?x ns1:latitude ?latitude.
+}`);
 	var queryUrl = `http://localhost:3030/triple/query?query=`+ query+"&format=json"
 	var finalValue= await fetch(queryUrl)
 	.then(function (response) {
@@ -43,12 +57,12 @@ const test =async function()
 		outcome.results.bindings.forEach(x => {
 		if (x.name.value.includes("musée"))
 		{
-			var marker = L.marker([x.lat.value,x.lon.value], {icon: greenIcon})
+			var marker = L.marker([x.latitude.value,x.longitude.value], {icon: greenIcon})
 			marker.bindPopup(x.name.value).addTo(map) ;
 		}
 		else{
 			console.log("passe")
-			var marker = L.marker([x.lat.value,x.lon.value], {icon: blueIcon})
+			var marker = L.marker([x.latitude.value,x.longitude.value], {icon: blueIcon})
 			marker.bindPopup(x.name.value).addTo(map) ;
 		}
 		

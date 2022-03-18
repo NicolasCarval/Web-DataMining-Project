@@ -21,15 +21,15 @@
     
 
 
-    <!-- http://www.semanticweb.org/sébastien/ontologies/2022/2/untitled-ontology-22#City -->
-
-    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/sébastien/ontologies/2022/2/untitled-ontology-22#City"/>
-    
-
-
     <!-- http://www.semanticweb.org/sébastien/ontologies/2022/2/untitled-ontology-22#Localisation -->
 
     <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/sébastien/ontologies/2022/2/untitled-ontology-22#Localisation"/>
+    
+
+
+    <!-- http://www.semanticweb.org/sébastien/ontologies/2022/2/untitled-ontology-22#city -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/sébastien/ontologies/2022/2/untitled-ontology-22#city"/>
     
 
 
@@ -104,37 +104,7 @@
         <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/sébastien/ontologies/2022/2/untitled-ontology-22#Place"/>
         <rdfs:subClassOf>
             <owl:Restriction>
-                <owl:onProperty rdf:resource="http://www.semanticweb.org/sébastien/ontologies/2022/2/untitled-ontology-22#City"/>
-                <owl:allValuesFrom rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
-            </owl:Restriction>
-        </rdfs:subClassOf>
-        <rdfs:subClassOf>
-            <owl:Restriction>
                 <owl:onProperty rdf:resource="http://www.semanticweb.org/sébastien/ontologies/2022/2/untitled-ontology-22#Localisation"/>
-                <owl:allValuesFrom rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
-            </owl:Restriction>
-        </rdfs:subClassOf>
-        <rdfs:subClassOf>
-            <owl:Restriction>
-                <owl:onProperty rdf:resource="http://www.semanticweb.org/sébastien/ontologies/2022/2/untitled-ontology-22#department"/>
-                <owl:allValuesFrom rdf:resource="http://www.w3.org/2001/XMLSchema#int"/>
-            </owl:Restriction>
-        </rdfs:subClassOf>
-        <rdfs:subClassOf>
-            <owl:Restriction>
-                <owl:onProperty rdf:resource="http://www.semanticweb.org/sébastien/ontologies/2022/2/untitled-ontology-22#latitude"/>
-                <owl:allValuesFrom rdf:resource="http://www.w3.org/2001/XMLSchema#double"/>
-            </owl:Restriction>
-        </rdfs:subClassOf>
-        <rdfs:subClassOf>
-            <owl:Restriction>
-                <owl:onProperty rdf:resource="http://www.semanticweb.org/sébastien/ontologies/2022/2/untitled-ontology-22#longitude"/>
-                <owl:allValuesFrom rdf:resource="http://www.w3.org/2001/XMLSchema#double"/>
-            </owl:Restriction>
-        </rdfs:subClassOf>
-        <rdfs:subClassOf>
-            <owl:Restriction>
-                <owl:onProperty rdf:resource="http://www.semanticweb.org/sébastien/ontologies/2022/2/untitled-ontology-22#name"/>
                 <owl:allValuesFrom rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
             </owl:Restriction>
         </rdfs:subClassOf>
@@ -145,36 +115,29 @@
 
     <!-- http://www.semanticweb.org/sébastien/ontologies/2022/2/untitled-ontology-22#Place -->
 
-    <owl:Class rdf:about="http://www.semanticweb.org/sébastien/ontologies/2022/2/untitled-ontology-22#Place"/>
-    
-
-
-    <!-- http://www.semanticweb.org/sébastien/ontologies/2022/2/untitled-ontology-22#TrainStation -->
-
-    <owl:Class rdf:about="http://www.semanticweb.org/sébastien/ontologies/2022/2/untitled-ontology-22#TrainStation">
-        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/sébastien/ontologies/2022/2/untitled-ontology-22#Place"/>
+    <owl:Class rdf:about="http://www.semanticweb.org/sébastien/ontologies/2022/2/untitled-ontology-22#Place">
         <rdfs:subClassOf>
             <owl:Restriction>
-                <owl:onProperty rdf:resource="http://www.semanticweb.org/sébastien/ontologies/2022/2/untitled-ontology-22#City"/>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/sébastien/ontologies/2022/2/untitled-ontology-22#city"/>
                 <owl:allValuesFrom rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
             </owl:Restriction>
         </rdfs:subClassOf>
         <rdfs:subClassOf>
             <owl:Restriction>
                 <owl:onProperty rdf:resource="http://www.semanticweb.org/sébastien/ontologies/2022/2/untitled-ontology-22#department"/>
-                <owl:allValuesFrom rdf:resource="http://www.w3.org/2001/XMLSchema#int"/>
+                <owl:allValuesFrom rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
             </owl:Restriction>
         </rdfs:subClassOf>
         <rdfs:subClassOf>
             <owl:Restriction>
                 <owl:onProperty rdf:resource="http://www.semanticweb.org/sébastien/ontologies/2022/2/untitled-ontology-22#latitude"/>
-                <owl:allValuesFrom rdf:resource="http://www.w3.org/2001/XMLSchema#boolean"/>
+                <owl:allValuesFrom rdf:resource="http://www.w3.org/2001/XMLSchema#float"/>
             </owl:Restriction>
         </rdfs:subClassOf>
         <rdfs:subClassOf>
             <owl:Restriction>
                 <owl:onProperty rdf:resource="http://www.semanticweb.org/sébastien/ontologies/2022/2/untitled-ontology-22#longitude"/>
-                <owl:allValuesFrom rdf:resource="http://www.w3.org/2001/XMLSchema#boolean"/>
+                <owl:allValuesFrom rdf:resource="http://www.w3.org/2001/XMLSchema#float"/>
             </owl:Restriction>
         </rdfs:subClassOf>
         <rdfs:subClassOf>
@@ -185,8 +148,22 @@
         </rdfs:subClassOf>
         <rdfs:subClassOf>
             <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/sébastien/ontologies/2022/2/untitled-ontology-22#zipCode"/>
+                <owl:allValuesFrom rdf:resource="http://www.w3.org/2001/XMLSchema#int"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/sébastien/ontologies/2022/2/untitled-ontology-22#TrainStation -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/sébastien/ontologies/2022/2/untitled-ontology-22#TrainStation">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/sébastien/ontologies/2022/2/untitled-ontology-22#Place"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
                 <owl:onProperty rdf:resource="http://www.semanticweb.org/sébastien/ontologies/2022/2/untitled-ontology-22#numberOfUsers"/>
-                <owl:allValuesFrom rdf:resource="http://www.w3.org/2001/XMLSchema#double"/>
+                <owl:allValuesFrom rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
             </owl:Restriction>
         </rdfs:subClassOf>
         <rdfs:subClassOf>

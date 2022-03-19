@@ -9,6 +9,8 @@ var dicoFilter = {
   trafficLow: true,
   trafficMedium: true,
   trafficHigh: true,
+  trainOnly:false,
+  museumOnly:false
 };
 
 //When loading the page we want to be on paris (map focus, weather info ...)
@@ -104,6 +106,22 @@ WHERE {
       `MINUS {
         ?x  ns1:numberOfUsers "high" .
       } 
+    `;
+  }
+  if (dicoFilter["trainOnly"] == true) {
+    query =
+      query +
+      `MINUS {
+        ?x rdf:type ns1:Museum .
+      }
+    `;
+  }
+  if (dicoFilter["museumOnly"] == true) {
+    query =
+      query +
+      `MINUS {
+        ?x rdf:type ns1:TrainStation .
+      }
     `;
   }
   query = query + "}";

@@ -63,16 +63,17 @@ PREFIX rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>
 PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>
 PREFIX ns1: <http://www.semanticweb.org/sebastien/ontologies/2022/2/untitled-ontology-22#> 
 
-
-
-SELECT distinct ?name ?longitude ?latitude ?type
+SELECT distinct ?name ?longitude ?latitude ?type ?wifi ?nbu ?zip ?dpt ?city ?loc
 WHERE {
 ?x rdf:type ?type.
 ?type rdfs:subClassOf* ns1:Place.
 ?x ns1:name ?name.
+?x ns1:city ?city.
 ?x ns1:longitude ?longitude.
 ?x ns1:latitude ?latitude.
-`);
+?x ns1:zipCode ?zip.
+?x ns1:department ?dpt.
+OPTIONAL{?x ns1:numberOfUsers ?nbu}.OPTIONAL{?x ns1:wifi ?wifi}.OPTIONAL{?x ns1:Localisation ?loc}`);
 
   if (dicoFilter["wifiOnly"] == true) {
     query =
@@ -113,22 +114,38 @@ WHERE {
   var finalValue = await fetch(queryUrl)
     .then(function (response) {
       return response.text();
-    })
+    })  
     .then(function (text) {
       let outcome = JSON.parse(text);
+	  console.log(outcome);
       outcome.results.bindings.forEach((x) => {
         if (x.type.value.includes("Museum")) {
           var marker = L.marker([x.latitude.value, x.longitude.value], {
             icon: greenIcon,
           });
           Lmarker.push(marker);
-          marker.bindPopup("\n🏛️ Musée: \n" + x.name.value).addTo(map);
+          marker.bindPopup("\n🏛️ Musée:<br /> " + x.name.value+"<br />"
+		  +"Localisation: "+x.loc.value+"<br />"
+		  +"City: "+x.city.value+"<br />"
+		  +"Department: "+x.dpt.value+"<br />"
+		  +"Zipcode: "+x.zip.value+"<br />"
+		  +"Longitude: "+x.longitude.value+"<br />"
+		  +"Latitude: "+x.latitude.value+"<br />"
+		  ).addTo(map);
         } else {
           var marker = L.marker([x.latitude.value, x.longitude.value], {
             icon: blueIcon,
           });
           Lmarker.push(marker);
-          marker.bindPopup("🚉 Gare: \n" + x.name.value).addTo(map);
+          marker.bindPopup("🚉 Gare:<br />" + x.name.value+"<br />"
+		  +"Department: "+x.dpt.value+"<br />"
+		  +"City: "+x.city.value+"<br />"
+		  +"Zipcode: "+x.zip.value+"<br />"
+		  +"Longitude: "+x.longitude.value+"<br />"
+		  +"Latitude: "+x.latitude.value+"<br />"
+		  +"Wifi: "+x.wifi.value+"<br />"
+		  +"Number of users per year: "+x.nbu.value+"<br />"
+		  ).addTo(map);
         }
       });
     });

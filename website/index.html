@@ -92,13 +92,28 @@
               <input type="button" id="dwn-btn" value="Download every point of interest of the city currently chosen"/>
             </div>
           </div>
-		  <h2>⚫ Download ⚫</h3>
-          
+		      <h2>⚫ Download ⚫</h3>
           <div>
             <a href="triple.ttl" download="OurRdfFile"> 
-        <label>Our rdf file</label>
-      </a>
+              <label>Our rdf file</label>
+            </a>
           </div>
+
+          <h2>⚫ Trip Computation ⚫</h3>
+            <div>
+              <label for="trainStation1-select">Choose the departure's trainstation:</label>
+              <select name="t1" id="trainStation1-select">
+                </select>
+            </div>
+
+            <div>
+              <label for="trainStation2-select">Choose the arrival's trainstation:</label>
+              <select name="t2" id="trainStation2-select">
+                </select>
+            </div>
+            <div>
+              <input type="button" id="trip-btn" value="Search"/>
+            </div>
         </div>
       </div>
       <div class="columnright">

@@ -9,8 +9,8 @@ var dicoFilter = {
   trafficLow: true,
   trafficMedium: true,
   trafficHigh: true,
-  trainOnly:false,
-  museumOnly:false
+  trainOnly: false,
+  museumOnly: false
 };
 
 //When loading the page we want to be on paris (map focus, weather info ...)
@@ -20,6 +20,7 @@ function initialisation() {
   document.getElementById("city-select").selectedIndex = 0;
   populateCitySelect();
   cityChange();
+  populateTrainSelect();
 }
 //Change position on the map
 function displayMap(latitude, longitude) {
@@ -128,42 +129,42 @@ OPTIONAL{?x ns1:numberOfUsers ?nbu}.OPTIONAL{?x ns1:wifi ?wifi}.OPTIONAL{?x ns1:
   query = query + "}";
 
   var queryUrl =
-    `http://localhost:3030/triple/query?query=` + query + "&format=json";
+    `http://localhost:3030/triple2/query?query=` + query + "&format=json";
   var finalValue = await fetch(queryUrl)
     .then(function (response) {
       return response.text();
-    })  
+    })
     .then(function (text) {
       let outcome = JSON.parse(text);
-	  console.log(outcome);
+      console.log(outcome);
       outcome.results.bindings.forEach((x) => {
         if (x.type.value.includes("Museum")) {
           var marker = L.marker([x.latitude.value, x.longitude.value], {
             icon: greenIcon,
           });
           Lmarker.push(marker);
-          marker.bindPopup("\n🏛️ Musée:<br /> " + x.name.value+"<br />"
-		  +"Localisation: "+x.loc.value+"<br />"
-		  +"City: "+x.city.value+"<br />"
-		  +"Department: "+x.dpt.value+"<br />"
-		  +"Zipcode: "+x.zip.value+"<br />"
-		  +"Longitude: "+x.longitude.value+"<br />"
-		  +"Latitude: "+x.latitude.value+"<br />"
-		  ).addTo(map);
+          marker.bindPopup("\n🏛️ Musée:<br /> " + x.name.value + "<br />"
+            + "Localisation: " + x.loc.value + "<br />"
+            + "City: " + x.city.value + "<br />"
+            + "Department: " + x.dpt.value + "<br />"
+            + "Zipcode: " + x.zip.value + "<br />"
+            + "Longitude: " + x.longitude.value + "<br />"
+            + "Latitude: " + x.latitude.value + "<br />"
+          ).addTo(map);
         } else {
           var marker = L.marker([x.latitude.value, x.longitude.value], {
             icon: blueIcon,
           });
           Lmarker.push(marker);
-          marker.bindPopup("🚉 Gare:<br />" + x.name.value+"<br />"
-		  +"Department: "+x.dpt.value+"<br />"
-		  +"City: "+x.city.value+"<br />"
-		  +"Zipcode: "+x.zip.value+"<br />"
-		  +"Longitude: "+x.longitude.value+"<br />"
-		  +"Latitude: "+x.latitude.value+"<br />"
-		  +"Wifi: "+x.wifi.value+"<br />"
-		  +"Number of users per year: "+x.nbu.value+"<br />"
-		  ).addTo(map);
+          marker.bindPopup("🚉 Gare:<br />" + x.name.value + "<br />"
+            + "Department: " + x.dpt.value + "<br />"
+            + "City: " + x.city.value + "<br />"
+            + "Zipcode: " + x.zip.value + "<br />"
+            + "Longitude: " + x.longitude.value + "<br />"
+            + "Latitude: " + x.latitude.value + "<br />"
+            + "Wifi: " + x.wifi.value + "<br />"
+            + "Number of users per year: " + x.nbu.value + "<br />"
+          ).addTo(map);
         }
       });
     });
@@ -267,13 +268,78 @@ async function populateCitySelect() {
     });
 
   select = document.getElementById("city-select");
-  for (var i = 0; i < city_query.length; i++) {
+  for (let i = 0; i < city_query.length; i++) {
     var opt = document.createElement("option");
     opt.value = city_query[i]["city"]["value"];
     opt.innerHTML = city_query[i]["city"]["value"];
     select.appendChild(opt);
   }
 }
+
+async function populateTrainSelect() {
+  var query = encodeURIComponent(`
+    PREFIX dc: <http://purl.org/dc/elements/1.1/>
+    PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
+    PREFIX rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>
+    PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>
+    PREFIX ns1: <http://www.semanticweb.org/sebastien/ontologies/2022/2/untitled-ontology-22#> 
+    
+    SELECT distinct ?name ?id_gare
+    WHERE{
+      ?x rdf:type ?TrainStation.
+      ?x ns1:name ?name .
+      ?x ns1:id_gare ?id_gare.
+
+    }
+    ORDER BY ASC(?name)`);
+
+  var queryUrl =
+    `http://localhost:3030/triple/query?query=` + query + "&format=json";
+  var train_query = await fetch(queryUrl)
+    .then(function (response) {
+      return response.text();
+    })
+    .then(function (text) {
+      let outcome = JSON.parse(text);
+      return outcome["results"]["bindings"];
+    });
+
+  const select1 = document.getElementById("trainStation1-select");
+  const select2 = document.getElementById("trainStation2-select");
+  for (let i = 0; i < train_query.length; i++) {
+    var opt = document.createElement("option");
+    opt.value = train_query[i]["id_gare"]["value"];
+    opt.innerHTML = train_query[i]["name"]["value"];
+    select2.appendChild(opt);
+
+
+  }
+  for (let i = 0; i < train_query.length; i++) {
+    var opt = document.createElement("option");
+    opt.value = train_query[i]["id_gare"]["value"];
+    opt.innerHTML = train_query[i]["name"]["value"];
+    select1.appendChild(opt);
+
+  }
+}
+
+
+function SNCF(latitude, longitude) {
+  var url = `http://api.openweathermap.org/data/2.5/weather?lat=${latitude}&lon=${longitude}&appid=ce8847370586f5876e9c7186b725a50c&units=metric`;
+  return fetch(url)
+    .then(function (response) {
+      return response.text();
+    })
+    .then(function (text) {
+      let answer = JSON.parse(text);
+      return answer;
+    })
+    .catch(function (error) {
+      console.log(error);
+    });
+}
+
+
 
 function filterChange(id) {
   var checkBox = document.getElementById(id);
@@ -298,8 +364,7 @@ function markerDelAgain() {
 }
 
 
-async function download()
-{
+async function download() {
   let city = document.getElementById("city-select").value;
   var query = encodeURIComponent(`
   PREFIX dc: <http://purl.org/dc/elements/1.1/>
@@ -317,26 +382,65 @@ async function download()
     ?x ns1:city "${city}".
     ?x ?p ?o.
     }`).replace(/\n/g, '');
-    var queryUrl =`http://localhost:3030/triple/query?query=` + query;
-    var city_query_construct = await fetch(queryUrl)
+  var queryUrl = `http://localhost:3030/triple/query?query=` + query;
+  var city_query_construct = await fetch(queryUrl)
     .then(function (response) {
       return response.text();
     })
-    console.log(city_query_construct)
+  console.log(city_query_construct)
 
-    var element = document.createElement('a');
-    element.setAttribute('href', 'data:text/plain;charset=utf-8,' + encodeURIComponent(city_query_construct));
-    element.setAttribute('download', "city.txt");
+  var element = document.createElement('a');
+  element.setAttribute('href', 'data:text/plain;charset=utf-8,' + encodeURIComponent(city_query_construct));
+  element.setAttribute('download', "city.txt");
 
-    element.style.display = 'none';
-    document.body.appendChild(element);
+  element.style.display = 'none';
+  document.body.appendChild(element);
 
-    element.click();
+  element.click();
 
-    document.body.removeChild(element);
+  document.body.removeChild(element);
 }
-document.getElementById("dwn-btn").addEventListener("click", function(){
-  // Generate download of hello.txt file with some content
-  var filename = "hello.txt";
+document.getElementById("dwn-btn").addEventListener("click", function () {
   download();
 }, false);
+
+
+document.getElementById("trip-btn").addEventListener("click", async function () {
+  var trajet=""
+  let trainStation1Id = document.getElementById("trainStation1-select").value;
+  let trainStation2Id = document.getElementById("trainStation2-select").value;
+  var result = []
+  console.log(trainStation1Id + " "+trainStation2Id);
+  var url = `https://api.navitia.io/v1/coverage/sncf/journeys?from=${trainStation1Id}&to=${trainStation2Id}`;
+  var xhr = new XMLHttpRequest();
+  xhr.open("GET", url);
+  xhr.setRequestHeader("Authorization", "5b3cc55f-1fec-4bd9-8e09-957b4de0c84b");
+  xhr.onreadystatechange = function () {
+    if (xhr.readyState === 4) {
+      let temp=JSON.parse(xhr.responseText)
+      console.log("temp"+temp)
+      console.log("temp&journey"+temp.journeys)
+      result.push(temp.journeys)
+    }
+  };
+  await xhr.send();
+  console.log("result"+result);
+  console.log("result0"+result[0]);
+    
+/*
+  if(result===undefined)
+  {
+    console.log("undefined")
+  }
+  if (result)
+  {
+    
+
+    
+  }
+  else{
+    console.log("not found")
+  }*/
+}, false);
+
+

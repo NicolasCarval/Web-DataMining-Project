@@ -10,7 +10,7 @@ var dicoFilter = {
   trafficMedium: true,
   trafficHigh: true,
   trainOnly: false,
-  museumOnly: false
+  museumOnly: false,
 };
 
 //When loading the page we want to be on paris (map focus, weather info ...)
@@ -143,28 +143,64 @@ OPTIONAL{?x ns1:numberOfUsers ?nbu}.OPTIONAL{?x ns1:wifi ?wifi}.OPTIONAL{?x ns1:
             icon: greenIcon,
           });
           Lmarker.push(marker);
-          marker.bindPopup("\n🏛️ Musée:<br /> " + x.name.value + "<br />"
-            + "Localisation: " + x.loc.value + "<br />"
-            + "City: " + x.city.value + "<br />"
-            + "Department: " + x.dpt.value + "<br />"
-            + "Zipcode: " + x.zip.value + "<br />"
-            + "Longitude: " + x.longitude.value + "<br />"
-            + "Latitude: " + x.latitude.value + "<br />"
-          ).addTo(map);
+          marker
+            .bindPopup(
+              "\n🏛️ Musée:<br /> " +
+                x.name.value +
+                "<br />" +
+                "Localisation: " +
+                x.loc.value +
+                "<br />" +
+                "City: " +
+                x.city.value +
+                "<br />" +
+                "Department: " +
+                x.dpt.value +
+                "<br />" +
+                "Zipcode: " +
+                x.zip.value +
+                "<br />" +
+                "Longitude: " +
+                x.longitude.value +
+                "<br />" +
+                "Latitude: " +
+                x.latitude.value +
+                "<br />"
+            )
+            .addTo(map);
         } else {
           var marker = L.marker([x.latitude.value, x.longitude.value], {
             icon: blueIcon,
           });
           Lmarker.push(marker);
-          marker.bindPopup("🚉 Gare:<br />" + x.name.value + "<br />"
-            + "Department: " + x.dpt.value + "<br />"
-            + "City: " + x.city.value + "<br />"
-            + "Zipcode: " + x.zip.value + "<br />"
-            + "Longitude: " + x.longitude.value + "<br />"
-            + "Latitude: " + x.latitude.value + "<br />"
-            + "Wifi: " + x.wifi.value + "<br />"
-            + "Number of users per year: " + x.nbu.value + "<br />"
-          ).addTo(map);
+          marker
+            .bindPopup(
+              "🚉 Gare:<br />" +
+                x.name.value +
+                "<br />" +
+                "Department: " +
+                x.dpt.value +
+                "<br />" +
+                "City: " +
+                x.city.value +
+                "<br />" +
+                "Zipcode: " +
+                x.zip.value +
+                "<br />" +
+                "Longitude: " +
+                x.longitude.value +
+                "<br />" +
+                "Latitude: " +
+                x.latitude.value +
+                "<br />" +
+                "Wifi: " +
+                x.wifi.value +
+                "<br />" +
+                "Number of users per year: " +
+                x.nbu.value +
+                "<br />"
+            )
+            .addTo(map);
         }
       });
     });
@@ -257,7 +293,7 @@ async function populateCitySelect() {
     ORDER BY ASC(?city)`);
 
   var queryUrl =
-    `http://localhost:3030/triple/query?query=` + query + "&format=json";
+    `http://localhost:3030/triple2/query?query=` + query + "&format=json";
   var city_query = await fetch(queryUrl)
     .then(function (response) {
       return response.text();
@@ -294,7 +330,7 @@ async function populateTrainSelect() {
     ORDER BY ASC(?name)`);
 
   var queryUrl =
-    `http://localhost:3030/triple/query?query=` + query + "&format=json";
+    `http://localhost:3030/triple2/query?query=` + query + "&format=json";
   var train_query = await fetch(queryUrl)
     .then(function (response) {
       return response.text();
@@ -311,18 +347,14 @@ async function populateTrainSelect() {
     opt.value = train_query[i]["id_gare"]["value"];
     opt.innerHTML = train_query[i]["name"]["value"];
     select2.appendChild(opt);
-
-
   }
   for (let i = 0; i < train_query.length; i++) {
     var opt = document.createElement("option");
     opt.value = train_query[i]["id_gare"]["value"];
     opt.innerHTML = train_query[i]["name"]["value"];
     select1.appendChild(opt);
-
   }
 }
-
 
 function SNCF(latitude, longitude) {
   var url = `http://api.openweathermap.org/data/2.5/weather?lat=${latitude}&lon=${longitude}&appid=ce8847370586f5876e9c7186b725a50c&units=metric`;
@@ -338,8 +370,6 @@ function SNCF(latitude, longitude) {
       console.log(error);
     });
 }
-
-
 
 function filterChange(id) {
   var checkBox = document.getElementById(id);
@@ -363,7 +393,6 @@ function markerDelAgain() {
   Lmarker = [];
 }
 
-
 async function download() {
   let city = document.getElementById("city-select").value;
   var query = encodeURIComponent(`
@@ -381,66 +410,187 @@ async function download() {
     ?type rdfs:subClassOf* ns1:Place.
     ?x ns1:city "${city}".
     ?x ?p ?o.
-    }`).replace(/\n/g, '');
-  var queryUrl = `http://localhost:3030/triple/query?query=` + query;
-  var city_query_construct = await fetch(queryUrl)
-    .then(function (response) {
-      return response.text();
-    })
-  console.log(city_query_construct)
+    }`).replace(/\n/g, "");
+  var queryUrl = `http://localhost:3030/triple2/query?query=` + query;
+  var city_query_construct = await fetch(queryUrl).then(function (response) {
+    return response.text();
+  });
+  console.log(city_query_construct);
 
-  var element = document.createElement('a');
-  element.setAttribute('href', 'data:text/plain;charset=utf-8,' + encodeURIComponent(city_query_construct));
-  element.setAttribute('download', "city.txt");
+  var element = document.createElement("a");
+  element.setAttribute(
+    "href",
+    "data:text/plain;charset=utf-8," + encodeURIComponent(city_query_construct)
+  );
+  element.setAttribute("download", "city.txt");
 
-  element.style.display = 'none';
+  element.style.display = "none";
   document.body.appendChild(element);
 
   element.click();
 
   document.body.removeChild(element);
 }
-document.getElementById("dwn-btn").addEventListener("click", function () {
-  download();
-}, false);
+document.getElementById("dwn-btn").addEventListener(
+  "click",
+  function () {
+    download();
+  },
+  false
+);
 
+document
+  .getElementById("trip-btn")
+  .addEventListener("click", async function () {
+    var trajet = "";
+    let trainStation1Id = document.getElementById("trainStation1-select").value;
+    let trainStation2Id = document.getElementById("trainStation2-select").value;
+    console.log(trainStation1Id + " " + trainStation2Id);
+    var url = `https://api.navitia.io/v1/coverage/sncf/journeys?from=${trainStation1Id}&to=${trainStation2Id}&datetime=${getDate()}`;
+    var xhr = new XMLHttpRequest();
+    xhr.open("GET", url);
+    xhr.setRequestHeader(
+      "Authorization",
+      "5b3cc55f-1fec-4bd9-8e09-957b4de0c84b"
+    );
+    xhr.send();
+    xhr.onreadystatechange = async function () {
+      if (xhr.readyState === 4) {
+        let temp = JSON.parse(xhr.responseText);
+        if (temp.journeys) {
+          str = "";
+          var jsonld = "";
+          for (let i = 0; i < temp.journeys.length; i++) {
+            str +=
+              "\n🔹Option " +
+              (i + 1).toString() +
+              ":" +
+              "\n" +
+              "🔻Departure date: " +
+              toDate(temp.journeys[i].departure_date_time) +
+              "\n";
+            str +=
+              "🔺Arrival date: " +
+              toDate(temp.journeys[i].arrival_date_time) +
+              "\n";
+            str +=
+              "🕔Travel time: " +
+              travelTime(
+                toDate(temp.journeys[i].departure_date_time),
+                toDate(temp.journeys[i].arrival_date_time)
+              ) +
+              " h" +
+              "\n";
+            str +=
+              "🚉Number of transferts: " + temp.journeys[i].nb_transfers + "\n";
+            str += "📢Comment: " + temp.journeys[i].type + "\n";
+            jsonld += newJSONLD(
+              i,
+              toDate(temp.journeys[i].departure_date_time),
+              toDate(temp.journeys[i].arrival_date_time),
+              travelTime(
+                toDate(temp.journeys[i].departure_date_time),
+                toDate(temp.journeys[i].arrival_date_time)
+              ) + " h",
+              temp.journeys[i].type
+            );
+          }
+          alert(str);
+          jsonld += "<\\script>";
+          console.log(jsonld);
+          download("JSON_LD_travel",jsonld)
+        } else {
+          console.log("💥No result found💥");
+        }
+      }
+    };
+  });
 
-document.getElementById("trip-btn").addEventListener("click", async function () {
-  var trajet=""
-  let trainStation1Id = document.getElementById("trainStation1-select").value;
-  let trainStation2Id = document.getElementById("trainStation2-select").value;
-  var result = []
-  console.log(trainStation1Id + " "+trainStation2Id);
-  var url = `https://api.navitia.io/v1/coverage/sncf/journeys?from=${trainStation1Id}&to=${trainStation2Id}`;
-  var xhr = new XMLHttpRequest();
-  xhr.open("GET", url);
-  xhr.setRequestHeader("Authorization", "5b3cc55f-1fec-4bd9-8e09-957b4de0c84b");
-  xhr.onreadystatechange = function () {
-    if (xhr.readyState === 4) {
-      let temp=JSON.parse(xhr.responseText)
-      console.log("temp"+temp)
-      console.log("temp&journey"+temp.journeys)
-      result.push(temp.journeys)
-    }
-  };
-  await xhr.send();
-  console.log("result"+result);
-  console.log("result0"+result[0]);
-    
-/*
-  if(result===undefined)
-  {
-    console.log("undefined")
+function getDate() {
+  var date = new Date();
+  date = date.toISOString().replace("-", "");
+  date = date.replace("-", "");
+  date = date.replace(":", "");
+  date = date.replace(":", "");
+  date = date.split(".")[0];
+  return date;
+}
+
+function toDate(date) {
+  newdate = date.charAt(0) + date.charAt(1) + date.charAt(2) + date.charAt(3);
+  newdate += "-" + date.charAt(4) + date.charAt(5);
+  newdate += "-" + date.charAt(6) + date.charAt(7);
+  newdate += " " + date.charAt(9) + date.charAt(10);
+  newdate += ":" + date.charAt(11) + date.charAt(12);
+  newdate += ":" + date.charAt(13) + date.charAt(14);
+  return newdate;
+}
+
+function travelTime(start, end) {
+  start = new Date(start);
+  end = new Date(end);
+  console.log(end);
+  dif = Math.abs(end - start) / 36e5;
+  return Math.round(dif * 100) / 100;
+}
+
+function newJSONLD(i, startTime, endTime, duration, description) {
+  var string = "";
+  if (i != 0) {
+    string += ",";
+  } else {
+    string += '<script type="application/ld+json">';
   }
-  if (result)
-  {
-    
+  string += `
+   {
+      "@context":"https://schema.org",
+      "@type":"TravelAction",
+      "fromLocation":{
+        "@type":"City",
+        "name":"${
+          document.getElementById("trainStation1-select").options[
+            document.getElementById("trainStation1-select").selectedIndex
+          ].text
+        }"
+      },
+      "toLocation":{
+        "@type":"City",
+        "name":"${
+          document.getElementById("trainStation2-select").options[
+            document.getElementById("trainStation2-select").selectedIndex
+          ].text
+        }"
+      },
+      "startTime:{
+        "@type":"DateTime"
+        "Value":${startTime}
+      },
+      "endTime":{
+        "@type":"DateTime"
+        "Value":${endTime}
+      },
+      "bookingTime":{
+        "@type":"DateTime"
+        "Value":${duration}
+      },
+      "description":{
+        "@type":"Text",
+        "Value":"${description}"
+      }
+   }
+   `;
+  return string;
+}
 
-    
-  }
-  else{
-    console.log("not found")
-  }*/
-}, false);
-
-
+function download(filename, text) {
+  var element = document.createElement("a");
+  element.setAttribute(
+    "href",
+    "data:text/plain;charset=utf-8," + encodeURIComponent(text)
+  );
+  element.setAttribute("download", filename);
+  element.style.display = "none";
+  document.body.appendChild(element);
+  element.click();
+  document.body.removeChild(element);
+}

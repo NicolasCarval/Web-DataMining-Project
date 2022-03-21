@@ -296,3 +296,47 @@ function markerDelAgain() {
   }
   Lmarker = [];
 }
+
+
+async function download()
+{
+  let city = document.getElementById("city-select").value;
+  var query = encodeURIComponent(`
+  PREFIX dc: <http://purl.org/dc/elements/1.1/>
+  PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
+  PREFIX rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>
+  PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>
+  PREFIX ns1: <http://www.semanticweb.org/sebastien/ontologies/2022/2/untitled-ontology-22#> 
+  
+  CONSTRUCT {
+    ?x ?p ?o.
+    }
+    WHERE {
+    ?x rdf:type ?type.
+    ?type rdfs:subClassOf* ns1:Place.
+    ?x ns1:city "${city}".
+    ?x ?p ?o.
+    }`).replace(/\n/g, '');
+    var queryUrl =`http://localhost:3030/triple/query?query=` + query;
+    var city_query_construct = await fetch(queryUrl)
+    .then(function (response) {
+      return response.text();
+    })
+    console.log(city_query_construct)
+
+    var element = document.createElement('a');
+    element.setAttribute('href', 'data:text/plain;charset=utf-8,' + encodeURIComponent(city_query_construct));
+    element.setAttribute('download', "city.txt");
+
+    element.style.display = 'none';
+    document.body.appendChild(element);
+
+    element.click();
+
+    document.body.removeChild(element);
+}
+document.getElementById("dwn-btn").addEventListener("click", function(){
+  // Generate download of hello.txt file with some content
+  var filename = "hello.txt";
+  download();
+}, false);

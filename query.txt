@@ -25,6 +25,7 @@ SELECT distinct ?name ?cityWHERE {​​​​​​
 
 
 #List the name of trips that have Paris (or any other chosen city) as destination.
+Not done.
 
 #List the name of train station with wifi.
 

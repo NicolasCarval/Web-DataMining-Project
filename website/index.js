@@ -393,7 +393,7 @@ function markerDelAgain() {
   Lmarker = [];
 }
 
-async function download() {
+async function download2() {
   let city = document.getElementById("city-select").value;
   var query = encodeURIComponent(`
   PREFIX dc: <http://purl.org/dc/elements/1.1/>
@@ -434,7 +434,7 @@ async function download() {
 document.getElementById("dwn-btn").addEventListener(
   "click",
   function () {
-    download();
+    download2();
   },
   false
 );
